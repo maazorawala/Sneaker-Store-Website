@@ -4,7 +4,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .mysideNav a{
-    font-size: 55px;
+    font-size: 35px;
     text-decoration:none;
     text-decoration: none;
     display: block;
@@ -35,4 +35,28 @@ body{
 }
 #main{
     transition: margin-left 0.5s;
+}
+#load{
+    border:black 5px solid;
+    border-top:5px transparent solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    display: flex;
+    animation:spin 1s linear infinite;
+}
+    @keyframes spin{
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+
+.center{
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
 }
