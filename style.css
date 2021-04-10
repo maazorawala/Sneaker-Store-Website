@@ -3,25 +3,36 @@ body{
     background:#EBEBEB;
     font-family: 'Raleway', sans-serif;
 }
-a{
+.mysideNav a{
     font-size: 55px;
-    color:black;
     text-decoration:none;
     text-decoration: none;
     display: block;
-    padding-top: 60px;
+    padding-top: 47px;
     text-align: center;
     padding-bottom: 40px;
+    background-color: black;
+    color: rgba(255,255,255,0.5 );
+    transition:0.3s ease-out;
 }
 .mysideNav{
     border:2px solid black;
     display:block;  
     z-index: 1;
     transition: 0.5s;
-    overflow: hidden;
-    height: 100%;
-    width: 500px;
+    overflow-x: hidden;
+    width: 0px;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 #sideNav{
-    position: absolute;
+    position: fixed;
+}
+.mysideNav a:hover{
+    color: white; 
+    transition: 0.5s;
+}
+#main{
+    transition: margin-left 0.5s;
 }
