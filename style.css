@@ -1,10 +1,13 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 body::-webkit-scrollbar{
+    display: none;
+}
+.mysideNav::-webkit-scrollbar{
     display: none;
 }
 body{
@@ -17,11 +20,11 @@ a{
     color:black;
 }
 .mysideNav a{
-    font-size: 35px;
+    font-size:4.6vh;
     text-decoration:none;
     text-decoration: none;
     display: block;
-    padding: 5.125vh;
+    padding: 8vh;
     text-align: center;
     background:#000;
     color: rgba(255,255,255,0.5 );
@@ -80,13 +83,13 @@ a{
 }
 .card-container{
     overflow-x: scroll;
-    width:100%;
+    width:100vw;
     display:flex;
     padding: 2rem;
 }
 .card{
     height: max-content;
-    margin-left:150px;
+    margin-left:50px;
     box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
     background: rgb(0, 0, 0);
     color: white;
@@ -102,7 +105,7 @@ a{
     text-align: center;
     align-self: center;
     justify-self:center;
-    background: white;
+    background: rgb(0, 0, 0);
     transition:0.4s ease-in-out;
 }
 .paral{
@@ -110,6 +113,7 @@ a{
     height: 90vh;
     background: url(./resource/sneaker-cl1.jpg)center / cover fixed ;
     color: #fff;
+    width: 100%;
 }
 .card-title{
     font-size: 30px;
