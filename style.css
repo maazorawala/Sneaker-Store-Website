@@ -38,6 +38,7 @@ a{
     top: 0;
     left: 0;
     position: fixed;
+    height: fit-content;
 }
 #sideNav{
     position: fixed;
@@ -103,7 +104,7 @@ a{
     align-self: center;
     justify-self:center;
     background: white;
-    transition:0.3s ease-in-out;
+    transition:0.4s ease-in-out;
 }
 .paral{
     margin-top: 40px;
@@ -117,5 +118,5 @@ a{
 }
 .card:hover .img-card{
     height: 390px;
-    transition:0.3s;
+    transition:0.5s;
 }
