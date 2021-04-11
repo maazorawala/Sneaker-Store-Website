@@ -21,9 +21,8 @@ a{
     text-decoration:none;
     text-decoration: none;
     display: block;
-    padding-top: 40px;
+    padding: 5.125vh;
     text-align: center;
-    padding-bottom: 40px;
     background:#000;
     color: rgba(255,255,255,0.5 );
     transition:0.3s ease-out;
@@ -38,7 +37,7 @@ a{
     top: 0;
     left: 0;
     position: fixed;
-    height: fit-content;
+    height: 100vh;
 }
 #sideNav{
     position: fixed;
