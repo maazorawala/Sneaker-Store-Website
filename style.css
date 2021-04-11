@@ -1,10 +1,12 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
 }
 
 body::-webkit-scrollbar{
+    display: none;
+}
+.mysideNav::-webkit-scrollbar{
     display: none;
 }
 body{
@@ -17,7 +19,7 @@ a{
     color:black;
 }
 .mysideNav a{
-    font-size: 35px;
+    font-size:4.6vh;
     text-decoration:none;
     text-decoration: none;
     display: block;
