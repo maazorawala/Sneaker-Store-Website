@@ -3,7 +3,9 @@
     padding:0;
     box-sizing:border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body::-webkit-scrollbar{
     display: none;
 }
@@ -122,4 +124,11 @@ a{
 .card:hover .img-card{
     height: 390px;
     transition:0.5s;
+}
+.icon{
+    font-size: 5vh;
+    margin-left: 30%;
+    margin-bottom: 10vh;
+    overflow-x: hidden;
+    cursor: pointer;
 }

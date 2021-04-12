@@ -1,11 +1,17 @@
-openNav = () =>{
-    document.getElementById("sideNav").style.width = "500px";
-    document.getElementById("main").style.marginLeft = "500px";
-}
-closeNav = () =>{
-    document.getElementById("sideNav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
+'use strict'
+
+
+document.addEventListener('keypress', function(a){
+    if(a.key === 'ArrowRight'){
+        document.querySelector(".card-container").scrollTo({ left: 900, behavior: "smooth" });
+    }
+}  )
+document.addEventListener('keypress' , function(b){
+    if(b.key === 'ArrowLeft'){
+        document.querySelector(".card-container").scrollTo({left:-9900, behavior: "smooth"});
+    }
+})
+
 document.onreadystatechange = () =>{
     if(document.readyState != "complete"){
         document.querySelector("#load").style.visibility="visible";
@@ -21,3 +27,11 @@ document.addEventListener('keydown' , function(e){
         closeNav()
     }
 })
+const openNav = function () {
+    document.getElementById("sideNav").style.width = "500px";
+    document.getElementById("main").style.marginLeft = "500px";
+}
+const closeNav = function() {
+    document.getElementById("sideNav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
