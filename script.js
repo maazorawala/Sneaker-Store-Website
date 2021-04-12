@@ -16,3 +16,8 @@ document.onreadystatechange = () =>{
         document.body.style.visibility="visible";
     }
 }
+document.addEventListener('keydown' , function(e){
+    if(e.key === 'Escape'){
+        closeNav()
+    }
+})
