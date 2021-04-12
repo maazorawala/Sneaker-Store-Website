@@ -30,20 +30,24 @@ document.addEventListener('keydown' , function(e){
 const openNav = function () {
     document.getElementById("sideNav").style.width = "500px";
     document.getElementById("main").style.marginLeft = "500px";
+    document.body.classList.add('background-new');
 }
 const closeNav = function() {
     document.getElementById("sideNav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
+    document.body.classList.remove("background-new");
 }
 const checkpoint = 450;
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function()  {
     const currentScroll = window.pageYOffset;
     if (currentScroll <= checkpoint) {
     document.querySelector(".card-container").style.opacity = 0 ;
-} else {
+    
+}
+else {
     document.querySelector(".card-container").style.opacity = 1;
-    document.querySelector(".card-container").style.transition = "0.5s"
+    document.querySelector(".card-container").style.transition = "0.5s";
 }
     document.querySelector(".card-container").style.opacity = opacity;
 });

@@ -3,6 +3,10 @@
     padding:0;
     box-sizing:border-box;
 }
+@font-face {
+    font-family: BoldText;
+    src: url(./resource/AquireLight-YzE0o.otf);
+}
 html{
     scroll-behavior: smooth;
 }
@@ -81,8 +85,10 @@ a{
 }
 .heading{
     text-align:center;
-    margin-top: -50px;
-    font-size: 40px;
+    margin-top: -10vh;
+    font-size: 10vh;
+    width:max-content;
+    margin-left: 40%;
 }
 .card-container{
     overflow-x: scroll;
@@ -96,6 +102,7 @@ a{
     box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
     background: rgb(0, 0, 0);
     color: white;
+    
 }
 .card-container::-webkit-scrollbar{
     display:none;   
@@ -136,4 +143,32 @@ a{
 .onScroll-card{
     transition: 0.5s;
     opacity: 1;
+}
+.button-container{
+    width:60vh;
+    height:10vh;
+    margin-left: 75%;
+    margin-top: -5%;
+}
+#button{
+    font-size: 3vh;
+    cursor: pointer;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 900;
+    background:#272727;
+    color:white;
+    border-radius: 10vh;
+    padding:1.5vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    transition: 0.3s ease-in-out;
+    display: inline;
+}
+#button:hover{
+    color: #272727;
+    background:white;
+    border:0.5px solid black;
+    transition: 0.3s;
 }
