@@ -16,6 +16,7 @@ body{
     color:black;
     background:#EBEBEB;
     font-family: 'Raleway', sans-serif;
+
 }
 a{
     text-decoration: none;
@@ -131,4 +132,8 @@ a{
     margin-bottom: 10vh;
     overflow-x: hidden;
     cursor: pointer;
+}
+.onScroll-card{
+    transition: 0.5s;
+    opacity: 1;
 }

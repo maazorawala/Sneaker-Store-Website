@@ -8,7 +8,7 @@ document.addEventListener('keypress', function(a){
 }  )
 document.addEventListener('keypress' , function(b){
     if(b.key === 'ArrowLeft'){
-        document.querySelector(".card-container").scrollTo({left:-9900, behavior: "smooth"});
+        document.querySelector(".card-container").scrollTo({left:-900, behavior: "smooth"});
     }
 })
 
@@ -35,3 +35,15 @@ const closeNav = function() {
     document.getElementById("sideNav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+const checkpoint = 450;
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+    document.querySelector(".card-container").style.opacity = 0 ;
+} else {
+    document.querySelector(".card-container").style.opacity = 1;
+    document.querySelector(".card-container").style.transition = "0.5s"
+}
+    document.querySelector(".card-container").style.opacity = opacity;
+});
