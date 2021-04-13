@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>X-Hype</title>
     <script src="https://kit.fontawesome.com/c1ced132ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-</head>
+<link rel="shortcut icon" href="./resource/og-icon.png" type="image/x-icon">
 <body >
     <div class="load-page">
         <div id="load" class="center">
@@ -28,10 +28,19 @@
 <div id="main">
     <h1 class="heading">X-Hype</h1>
     <div class="button-container">
-
-        <a class="signup" id="button">Sing Up</a>
-        <a class="login" id="button" >Login</a>
-    </div>
+        <button class="show-modal" id="button">Sing Up</button>
+        <button class="show-modal-2" id="button" >Login</button>
+        </div>
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h1>Signup form</h1>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="modal-2 hidden">
+            <button class="close-modal-2">&times;</button>
+            <h1>Login Form</h1>
+        </div>
+        <div class="overlay-2 hidden"></div>
     <h1 class="paral"></h1>
     <div class="card-container">
         
