@@ -1,6 +1,5 @@
 'use strict'
 
-
 document.addEventListener('keypress', function(a){
     if(a.key === 'ArrowRight'){
         document.querySelector(".card-container").scrollTo({ left: 900, behavior: "smooth" });
@@ -42,26 +41,25 @@ const checkpoint = 450;
 window.addEventListener("scroll", function()  {
     const currentScroll = window.pageYOffset;
     if (currentScroll <= checkpoint) {
-    document.querySelector(".card-container").style.opacity = 0 ;
+    document.querySelector(".card-container").classList.add("opacity") ;
     
 }
 else {
-    document.querySelector(".card-container").style.opacity = 1;
+    document.querySelector(".card-container").classList.remove("opacity");
     document.querySelector(".card-container").style.transition = "0.5s";
 }
-    document.querySelector(".card-container").style.opacity = opacity;
 });
 const checkpoint_2 = 850;
 
 window.addEventListener("scroll", function () {
     const currentScroll = window.pageYOffset;
     if (currentScroll <= checkpoint_2) {
-    document.querySelector(".large-cards").style.opacity = 0;
+    document.querySelector(".large-cards").classList.add("opacity");
 } else {
-    document.querySelector(".large-cards").style.opacity = 1;
+    document.querySelector(".large-cards").classList.remove("opacity");
     document.querySelector(".large-cards").style.transition = "0.5s";
 }
-    document.querySelector(".card-container").style.opacity = opacity;
+    
 });
 
 const checkpoint_3 = 1550;
@@ -69,10 +67,58 @@ const checkpoint_3 = 1550;
 window.addEventListener("scroll" , function(){
     const currentScroll = window.pageYOffset;
     if(currentScroll <= checkpoint_3){
-        document.querySelector(".dior").style.opacity = 0;
+        document.querySelector(".dior").classList.add("opacity");
     }
     else{
-        document.querySelector(".dior").style.opacity = 1;
+        document.querySelector(".dior").classList.remove("opacity");
         document.querySelector(".dior").style.transition = "0.5s";
     }
 })
+
+const modal = document.querySelector('.modal');
+const modal2 = document.querySelector(".modal-2");
+const overlay = document.querySelector('.overlay');
+const overlay2 = document.querySelector(".overlay-2");
+const btnCloseModal = document.querySelector('.close-modal');
+const btnOpenModal = document.querySelectorAll('.show-modal');
+const btnCloseModal2 = document.querySelector(".close-modal-2");
+const btnOpenModal2 = document.querySelectorAll(".show-modal-2");
+
+const openModal = function() {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+}
+const closeModal = function() {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+};
+for(let i = 0; i<btnOpenModal.length; i++){
+    btnOpenModal[i].addEventListener('click', openModal)
+}
+btnCloseModal.addEventListener('click' , closeModal);
+overlay.addEventListener('click' , closeModal);
+document.addEventListener("keydown", function (v) {
+  if (v.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
+
+
+const openModal2 = function () {
+    modal2.classList.remove("hidden");
+    overlay2.classList.remove("hidden");
+};
+const closeModal2 = function () {
+  modal2.classList.add("hidden");
+  overlay2.classList.add("hidden");
+};
+for (let r = 0; r < btnOpenModal2.length; r++) {
+  btnOpenModal2[r].addEventListener("click", openModal2);
+}
+btnCloseModal2.addEventListener("click", closeModal2);
+overlay2.addEventListener("click", closeModal2);
+document.addEventListener("keydown", function (w) {
+  if (w.key === "Escape" && !modal2.classList.contains("hidden")) {
+    closeModal2();
+  }
+});
