@@ -51,3 +51,28 @@ else {
 }
     document.querySelector(".card-container").style.opacity = opacity;
 });
+const checkpoint_2 = 850;
+
+window.addEventListener("scroll", function () {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint_2) {
+    document.querySelector(".large-cards").style.opacity = 0;
+} else {
+    document.querySelector(".large-cards").style.opacity = 1;
+    document.querySelector(".large-cards").style.transition = "0.5s";
+}
+    document.querySelector(".card-container").style.opacity = opacity;
+});
+
+const checkpoint_3 = 1550;
+
+window.addEventListener("scroll" , function(){
+    const currentScroll = window.pageYOffset;
+    if(currentScroll <= checkpoint_3){
+        document.querySelector(".dior").style.opacity = 0;
+    }
+    else{
+        document.querySelector(".dior").style.opacity = 1;
+        document.querySelector(".dior").style.transition = "0.5s";
+    }
+})

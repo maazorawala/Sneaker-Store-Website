@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    
 }
 @font-face {
     font-family: BoldText;
@@ -20,7 +21,7 @@ body{
     color:black;
     background:#EBEBEB;
     font-family: 'Raleway', sans-serif;
-
+    overflow-x:hidden;
 }
 a{
     text-decoration: none;
@@ -57,7 +58,8 @@ a{
     transition: 0.5s;
 }
 #main{
-    transition: margin-left 0.5s;
+    transition:0.5s;
+    
 }
 #load{
     border:black 5px solid;
@@ -92,17 +94,16 @@ a{
 }
 .card-container{
     overflow-x: scroll;
-    width:100vw;
+    width:100%;
     display:flex;
     padding: 2rem;
 }
 .card{
     height: max-content;
-    margin-left:50px;
+    margin:2vh;
     box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
     background: rgb(0, 0, 0);
     color: white;
-    
 }
 .card-container::-webkit-scrollbar{
     display:none;   
@@ -130,7 +131,7 @@ a{
     background: rgba(255, 255, 255, 0);
 }
 .card:hover .img-card{
-    height: 390px;
+    height: 49vh;
     transition:0.5s;
 }
 .icon{
@@ -171,4 +172,29 @@ a{
     background:white;
     border:0.5px solid black;
     transition: 0.3s;
+}
+.large-img{
+    height:69vh;
+    margin-left: 7vh;
+}
+
+.one{
+    height: 85vh;
+}
+.text{
+    width:55vh;
+    padding-left:10vh;
+    text-align: center;
+}
+.dior{
+    height:80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./resource/dior-cactusjack.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
 }
