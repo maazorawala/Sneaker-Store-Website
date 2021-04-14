@@ -30,19 +30,42 @@
     <div class="button-container">
         <button class="show-modal" id="button">Sing Up</button>
         <button class="show-modal-2" id="button" >Login</button>
-        </div>
+    </div>
+
         <div class="modal hidden">
             <button class="close-modal">&times;</button>
-            <h1>Signup form</h1>
+            <h1 class="main-head">Sign Up </h1><br>
+            <h3 class="sub-heading">Signup here to get the latest updates from us</h3><br><br>
+            <form action="#" class="form">
+
+                <input required type="text"  placeholder="First Name" name="fname" id="fname"><br><br>
+
+                <input type="text" required placeholder="Last Name" name="lname" id="lname"><br><br>
+
+                <input type="date" required placeholder="DOB" name="dob" title="Date of Birth " id="dob"><br><br>
+
+                <input type="tel" required  name="mobile" placeholder="Enter Mobile No." id="mobile"><br><br>
+
+                <input type="email" required autocomplete="email" placeholder="Email" name="email" id="email"><br><br>
+
+                <input type="password" required  placeholder="Enter Password atleast 8 characters" name="password" autocomplete="current-password" id="password1"><br><br>
+
+                <input type="password" required   placeholder="Confirm Password" autocomplete="current-password" name="password" id="password2"><br><br>
+                <input type="submit" value="Sign Up" class="btn">
+                <input type="reset" value="Reset " class="btn">
+            </form>
+            <p class="login-red">Already have an account? <a href="#" onclick="openModal2(), closeModal()">Login here</a></p>
         </div>
+
         <div class="overlay hidden"></div>
         <div class="modal-2 hidden">
             <button class="close-modal-2">&times;</button>
             <h1>Login Form</h1>
         </div>
+
         <div class="overlay-2 hidden"></div>
     <h1 class="paral"></h1>
-    <div class="card-container">
+    <div class="card-container" >
         
         <a href="#">
             <div class="card 1">
@@ -79,7 +102,7 @@
         <a href="#">
             <div class="one">
                 <img src="./resource/db.jpg" alt="" class="large-img">
-                <h3 class="card-title text">Air Jordan 1 Mid SE Black History Month</h3>
+                <h3 class="card-title text">Adidas X David Beckham</h3>
             </div>
         </a>
         <a href="#">

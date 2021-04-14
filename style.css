@@ -105,9 +105,7 @@ a{
     background: rgb(0, 0, 0);
     color: white;
 }
-.card-container::-webkit-scrollbar{
-    display:none;   
-}
+
 .img-card{
     height:340px;
     display: flex;
@@ -166,16 +164,19 @@ a{
     padding-right: 4vh;
     transition: 0.3s ease-in-out;
     display: inline;
+    border:0px transparent solid;
 }
 #button:hover{
     color: #272727;
     background:white;
     border:0.5px solid black;
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
 }
 .large-img{
     height:69vh;
     margin-left: 7vh;
+    transition: 0.3s ease-in-out;
+    border: 1px transparent solid;
 }
 .one{
     height: 85vh;
@@ -198,17 +199,17 @@ a{
     justify-self:center;
 }
 .modal{
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
-    width: 70%;
+    width: 50%;
     background:white;
     padding:2vh;
     z-index: 10;
 }
 .overlay{
-    position:absolute;
+    position: fixed;
     top: 0;
     left:0;
     width: 100%;
@@ -221,7 +222,7 @@ a{
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
-    width: 70%;
+    width: 50%;
     background:white;
     padding:2vh;
     z-index: 10;
@@ -260,4 +261,63 @@ a{
     border: 1px transparent solid;
     background:transparent;
     cursor: pointer;
+}
+.large-img:hover{
+    border: 10px transparent solid;
+    transition: 0.45s  ;
+}
+.main-head , .sub-heading{
+    text-align: center;
+}
+.main-head{
+    font-size: 5vh;
+}
+input{
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif; 
+    padding:0.5vh;
+    width: 20vw;
+    font-size:2.5vh ;
+}
+form{
+    margin-left: 30vh;
+}
+.btn {
+    margin-left: 0vh;
+    width: 10vw;
+    background: black;
+    border:0px transparent solid;
+    padding:1vh;
+    color:white;
+    border-radius: 10vh;
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background:white;
+    color:black;
+    border:1px rgba(0, 0, 0, 1) solid;
+    transition: 0.3s;
+}
+.login-red{
+    text-align:center;
+    font-size: 2.5vh;
+    font-weight: 900;
+}
+.login-red a:hover{
+    text-decoration: underline;
+}
+.card-container::-webkit-scrollbar{
+    display:none;
+}
+.card-container:hover.card-container::-webkit-scrollbar{
+        height: 6px;
+        width: 1px;
+        background: rgb(0, 0, 0);
+        display: flex;
+}
+.card-container::-webkit-scrollbar-thumb:horizontal{
+        background: rgb(2,255,78);
+background: linear-gradient(90deg, rgba(2,255,78,1) 0%, rgba(154,212,214,1) 100%);
+        border-radius: 10px;
 }
