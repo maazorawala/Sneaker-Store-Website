@@ -122,3 +122,29 @@ document.addEventListener("keydown", function (w) {
     closeModal2();
   }
 });
+
+const password = document.getElementById('password1');
+const password_confirm = document.getElementById('password2');
+
+function validatePassword(){
+    if (password.value != password_confirm.value){
+        password_confirm.setCustomValidity("Passwords dont match");
+    }
+    else{
+        password_confirm.setCustomValidity('');
+    }
+}
+password.onchange = validatePassword;
+password_confirm.onkeyup = validatePassword;
+
+function lenghtPassword(){if(password.value.length <= 8){
+    password_confirm.setCustomValidity("Password length must be greater than 8")
+    password.setCustomValidity("Password length must be greater than 8");
+}
+else{
+    password_confirm.setCustomValidity("")
+    password.setCustomValidity("");
+}
+}
+password.onchange = lenghtPassword;
+password_confirm.onchange = lenghtPassword;
