@@ -1,15 +1,17 @@
-*{
+/* *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
     
-}
+} */
 @font-face {
     font-family: BoldText;
     src: url(./resource/LemonMilkBoldItalic-PKZ3P.otf);
 }
 html{
     scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    
 }
 body::-webkit-scrollbar{
     display: none;
@@ -22,6 +24,9 @@ body{
     background:#EBEBEB;
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
+    margin:0;
+    padding:0;
+    
 }
 a{
     text-decoration: none;
@@ -59,6 +64,8 @@ a{
 }
 #main{
     transition:0.5s;
+    margin:0;
+    padding:0;
     
 }
 #load{
@@ -87,16 +94,16 @@ a{
 }
 .heading{
     text-align:center;
-    margin-top: -10vh;
     font-size: 10vh;
     width:max-content;
     margin-left: 40%;
+    margin-top: -10vh;
 }
 .card-container{
     overflow-x: scroll;
     width:100%;
     display:flex;
-    padding: 2rem;
+    padding: 3rem;
 }
 .card{
     height: max-content;
@@ -104,10 +111,11 @@ a{
     box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
     background: rgb(0, 0, 0);
     color: white;
+    border-radius: 1vh;
 }
 
 .img-card{
-    height:340px;
+    height:44vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +137,7 @@ a{
     background: rgba(255, 255, 255, 0);
 }
 .card:hover .img-card{
-    height: 49vh;
+    height: 50vh;
     transition:0.5s;
 }
 .icon{
@@ -146,13 +154,13 @@ a{
 .button-container{
     width:60vh;
     height:10vh;
-    margin-left: 80%;
-    margin-top: -3%;
+    margin-left: 78%;
+    margin-top: -8%;
 }
 #button{
     font-size: 3vh;
     cursor: pointer;
-    margin-top: 1vh;
+    margin-top: -15vh;
     margin-left: 3vh;
     font-family: 'Raleway', sans-serif;  
     font-weight: 900;
@@ -173,16 +181,19 @@ a{
     transition: 0.5s ease-in-out;
 }
 .large-img{
-    height:69vh;
+    height:75vh;
     margin-left: 7vh;
     transition: 0.3s ease-in-out;
     border: 1px transparent solid;
 }
+.large-cards{
+    height:90vh;
+}
 .one{
-    height: 85vh;
+    height: 75vh;
 }
 .text{
-    width:55vh;
+    width:50vh;
     padding-left:10vh;
     text-align: center;
 }
@@ -197,6 +208,7 @@ a{
     text-align: center;
     align-self: center;
     justify-self:center;
+    margin:0;
 }
 .modal{
     position: fixed;
@@ -205,7 +217,7 @@ a{
     transform:translate(-50%, -50%);
     width: 50%;
     background:white;
-    padding:2vh;
+    padding:1.5vh;
     z-index: 10;
 }
 .overlay{
@@ -269,9 +281,11 @@ a{
 }
 .main-head , .sub-heading{
     text-align: center;
+    margin: 0;
 }
 .main-head{
     font-size: 5vh;
+    
 }
 input{
     font-weight: 900;
@@ -281,7 +295,7 @@ input{
     font-size:2.5vh ;
     border-radius: 10vh;
     border: 1px grey solid;
-    margin-top: 1vh;
+    margin-top: 0.5vh;
 }
 form{
     margin-left: 30vh;
@@ -307,6 +321,7 @@ form{
     text-align:center;
     font-size: 2.5vh;
     font-weight: 900;
+    margin:0;
 }
 .login-red a:hover{
     text-decoration: underline;
@@ -344,6 +359,7 @@ i{
 column-count: 2 ;
 color: white;
 font-family: BoldText;
+margin: 0;
 }
 .cactus-title{
     padding-top: 10vh;
@@ -367,4 +383,20 @@ font-family: BoldText;
     color:rgb(255, 255, 255);
     border:1px rgba(0, 0, 0, 1) solid;
     transition: 0.3s;
+}
+.content-midpage{
+    width:100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    background: black;
+}
+.content-midpage img{
+    height: 100vh;
+    margin-left: 0vh;
 }
