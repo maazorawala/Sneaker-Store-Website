@@ -150,7 +150,7 @@ else{
 password.onchange = lenghtPassword;
 password_confirm.onchange = lenghtPassword;
 
-const checkpoint_4 = 2050;
+const checkpoint_4 = 1800;
 
 window.addEventListener("scroll", function () {
   const currentScroll = window.pageYOffset;
