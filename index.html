@@ -13,7 +13,6 @@
 <body >
     <div class="load-page">
         <div id="load" class="center">
-
         </div>
     </div>
     <span style="cursor: pointer; font-size: 70px;width:max-content;" onclick="openNav()" >&#9776;</span>
@@ -60,7 +59,14 @@
         <div class="overlay hidden"></div>
         <div class="modal-2 hidden">
             <button class="close-modal-2">&times;</button>
-            <h1>Login Form</h1>
+            <h1 class="login-head">Login</h1>
+            <form action="#">
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="Enter Registered Email or Mobile No."><br><br>
+            <input type="password" name="password" id="password" autocomplete="current-password" placeholder="Enter Password"><br><br>
+            <input type="submit" value="Login" id="submit-login" class="btn"><br><br>
+            <h3 class="login-red login-forgot-pass">Forgot password? <a href="#">Click here.</a></h3><br><br>
+            <h3 class="login-red login-forgot-pass">Or Login using <i class="fab fa-facebook-f" onclick="javascript.void(0)"></i><i class="fab fa-google"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-apple"></i></h3>
+            </form>
         </div>
 
         <div class="overlay-2 hidden"></div>
@@ -116,6 +122,12 @@
         <img src="./resource/cj.png" height="150vh"  alt=""> <p>X</p>
         <img src="./resource/d1.png" height="35vh" alt="">
     </h1>
+    <div class="cactus-jack">
+        <img src="./resource/nike-cactus.png" height="250vh" alt="cactus-jack-shoe">
+        <img src="./resource/nike-jack.png" height="250vh" alt="cactus-jack-shoe">
+        <h1 class="cactus-title">AIR JORDAN X "TRAVIS SCOTT" COLLECTION  </h1>
+        <button class="cactus-button">Shop Now</button>
+    </div>
 </div>
     <script src="script.js"></script>
 </body>

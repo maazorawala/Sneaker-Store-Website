@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: BoldText;
-    src: url(./resource/AquireLight-YzE0o.otf);
+    src: url(./resource/LemonMilkBoldItalic-PKZ3P.otf);
 }
 html{
     scroll-behavior: smooth;
@@ -218,7 +218,7 @@ a{
     z-index: 5;
 }
 .modal-2{
-    position: absolute;
+    position:fixed;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
@@ -234,6 +234,7 @@ a{
     width: 100%;
     height: 100%;
     background:rgba(0,0,0,0.5);
+    position:fixed;
     z-index: 5;
 }
 .opacity{
@@ -275,9 +276,12 @@ a{
 input{
     font-weight: 900;
     font-family: 'Raleway', sans-serif; 
-    padding:0.5vh;
-    width: 20vw;
+    padding:1.5vh;
+    width: 22vw;
     font-size:2.5vh ;
+    border-radius: 10vh;
+    border: 1px grey solid;
+    margin-top: 1vh;
 }
 form{
     margin-left: 30vh;
@@ -320,4 +324,47 @@ form{
         background: rgb(2,255,78);
 background: linear-gradient(90deg, rgba(2,255,78,1) 0%, rgba(154,212,214,1) 100%);
         border-radius: 10px;
+}
+.login-head{
+    text-align: center;
+}
+#submit-login{
+    margin-left:10vh ;
+}
+.login-forgot-pass{
+    margin-left:-30vh ;
+}
+i{
+    font-size: 3vh;
+    cursor:pointer;
+    margin:1vh;
+}
+.cactus-jack{
+    background: rgb(0, 0, 0);
+column-count: 2 ;
+color: white;
+font-family: BoldText;
+}
+.cactus-title{
+    padding-top: 10vh;
+}
+.cactus-button{
+    margin-left: 0vh;
+    width: 15vw;
+    background:white;
+    border:0px transparent solid;
+    padding:2vh;
+    color:rgb(0, 0, 0);
+    border-radius: 10vh;
+    cursor:pointer;
+    transition: 0.3s ease-in-out; 
+    font-family: BoldText;  
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+.cactus-button:hover{
+    background: linear-gradient(90deg, rgb(192, 138, 90) 0%, rgb(146, 91, 75) 100%);
+    color:rgb(255, 255, 255);
+    border:1px rgba(0, 0, 0, 1) solid;
+    transition: 0.3s;
 }

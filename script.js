@@ -72,6 +72,7 @@ window.addEventListener("scroll" , function(){
     else{
         document.querySelector(".dior").classList.remove("opacity");
         document.querySelector(".dior").style.transition = "0.5s";
+        document.querySelector(".dior").style.delay = "0.5s";
     }
 })
 
@@ -148,3 +149,16 @@ else{
 }
 password.onchange = lenghtPassword;
 password_confirm.onchange = lenghtPassword;
+
+const checkpoint_4 = 2050;
+
+window.addEventListener("scroll", function () {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint_4) {
+    document.querySelector(".cactus-jack").classList.add("opacity");
+  } else {
+    document.querySelector(".cactus-jack").classList.remove("opacity");
+    document.querySelector(".cactus-jack").style.transition = "0.5s";
+    document.querySelector(".cactus-jack").style.delay = "0.5s";
+  }
+});
