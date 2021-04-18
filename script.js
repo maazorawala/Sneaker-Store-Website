@@ -62,7 +62,7 @@ window.addEventListener("scroll", function () {
     
 });
 
-const checkpoint_3 = 1550;
+const checkpoint_3 = 1800;
 
 window.addEventListener("scroll" , function(){
     const currentScroll = window.pageYOffset;
@@ -73,6 +73,32 @@ window.addEventListener("scroll" , function(){
         document.querySelector(".dior").classList.remove("opacity");
         document.querySelector(".dior").style.transition = "0.5s";
         document.querySelector(".dior").style.delay = "0.5s";
+    }
+})
+const checkpoint_4 = 2400;
+
+window.addEventListener("scroll" , function(){
+    const currentScroll = window.pageYOffset;
+    if(currentScroll <= checkpoint_4){
+        document.querySelector(".dior-content").classList.add("opacity");
+    }
+    else{
+        document.querySelector(".dior-content").classList.remove("opacity");
+        document.querySelector(".dior-content").style.transition = "0.5s";
+        document.querySelector(".dior-content").style.delay = "0.5s";
+    }
+})
+const checkpoint_5 = 3000;
+
+window.addEventListener("scroll" , function(){
+    const currentScroll = window.pageYOffset;
+    if(currentScroll <= checkpoint_5){
+        document.querySelector(".cactus-jack").classList.add("opacity");
+    }
+    else{
+        document.querySelector(".cactus-jack").classList.remove("opacity");
+        document.querySelector(".cactus-jack").style.transition = "0.5s";
+        document.querySelector(".cactus-jack").style.delay = "0.5s";
     }
 })
 
@@ -149,16 +175,3 @@ else{
 }
 password.onchange = lenghtPassword;
 password_confirm.onchange = lenghtPassword;
-
-const checkpoint_4 = 1800;
-
-window.addEventListener("scroll", function () {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint_4) {
-    document.querySelector(".cactus-jack").classList.add("opacity");
-  } else {
-    document.querySelector(".cactus-jack").classList.remove("opacity");
-    document.querySelector(".cactus-jack").style.transition = "0.5s";
-    document.querySelector(".cactus-jack").style.delay = "0.5s";
-  }
-});

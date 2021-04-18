@@ -395,8 +395,18 @@ margin: 0;
     align-self: center;
     justify-self:center;
     background: black;
+    color: white;
 }
 .content-midpage img{
     height: 100vh;
     margin-left: 0vh;
+    z-index: 0;
+}
+.display-scrollbar:hover.display-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+.dior-content{
+    /* background: rgb(179,211,225);
+background: linear-gradient(90deg, rgba(179,211,225,1) 0%, rgba(231,235,250,1) 100%); */
+background:linear-gradient(rgba(0, 0, 0, 0.3) , rgba(255, 255, 255, 0.1)),url('./resource/steven-su-_54S942DIsA-unsplash.jpg')center / cover fixed;
 }
