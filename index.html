@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X-Hype</title>
     <script src="https://kit.fontawesome.com/c1ced132ff.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" rel="preload" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="./resource/og-icon.png" type="image/x-icon">
+<link rel="stylesheet" href="./resource/stylesheet.css" type="text/css" charset="utf-8" />
 <body >
 <div id="main">
     <div class="load-page">
@@ -25,7 +26,7 @@
         <a href="#">Accessories</a>
         <a href="#">Sale</a>
     </div>
-    <h1 class="heading">X-Hype</h1>><hr>
+    <h1 class="heading" id="top">X-Hype</h1>
     <div class="button-container">
         <button class="show-modal" id="button">Sing Up</button>
         <button class="show-modal-2" id="button" >Login</button>
@@ -45,7 +46,7 @@
 
                 <input type="tel" required  name="mobile" placeholder="Enter Mobile No." id="mobile"><br><br>
 
-                <input type="email" required autocomplete="email" placeholder="Email" name="email" id="email"><br><br>
+                <input type="email" required autocomplete="email" placeholder="Email" name="email-id" id="email-id"><br><br>
 
                 <input type="password" required  placeholder="Enter Password atleast 8 characters" name="password" autocomplete="current-password" id="password1"><br><br>
 
@@ -129,14 +130,17 @@
         <img src="./resource/nike-cactus.png" height="250vh" alt="cactus-jack-shoe">
         <img src="./resource/nike-jack.png" height="250vh" alt="cactus-jack-shoe">
         <h1 class="cactus-title">AIR JORDAN X "TRAVIS SCOTT" COLLECTION  </h1>
-        <button class="cactus-button">Shop Now</button>
+        <button class="cactus-button">SHOP NOW</button>
     </div>
     <div class="content-midpage">
         <img src="./resource/miami.jpg" alt="miami heat jersey">
         <img src="./resource/travis-houston.jpg" alt="unleash ">
         <img src="./resource/kobe.jpg" alt="unleash ">
     </div>
+    <footer class="footer">
+        <a href="#top" class="backToTop">Back to top</a>
+    </footer>
 </div>
-    <script src="script.js"></script>
+    <script rel="preload" src="script.js"></script>
 </body>
 </html>
