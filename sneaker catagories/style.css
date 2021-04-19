@@ -129,5 +129,9 @@ a{
     transition: 0.5s ease-in-out;
 }
 .paral{
-    background-image: url();
+    margin-top: 40px;
+    height: 85vh;
+    background: url(../resource/aj1-bg.jpg)center / cover fixed ;
+    color: #fff;
+    width: 100%;
 }
