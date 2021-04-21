@@ -125,8 +125,8 @@ document.addEventListener("keydown", function (w) {
   }
 });
 
-let password = document.getElementById('password1');
-let password_confirm = document.getElementById('password2');
+let password = document.getElementsByClassName('password1');
+let password_confirm = document.getElementsByClassName('password2');
 
 function lenghtPassword(){if(password.value.length <= 7){
     password_confirm.setCustomValidity("Password length must be greater than 8")

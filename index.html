@@ -49,9 +49,10 @@
 
                 <input type="email" required placeholder="Email" name="email-id" id="email-id"><br><br>
 
-                <input type="password" required  placeholder="Enter Password atleast 8 characters" name="password"  id="password1"><br><br>
+                <input type="password" autocomplete="new-password" required  placeholder="Enter Password atleast 8 characters" name="password" class="password1"  id="new-password"><br><br>
 
-                <input type="password" required   placeholder="Confirm Password" name="password" id="password2"><br><br>
+                <input type="password" required autocomplete="new-password" placeholder="Confirm Password" name="password" class="password2" id="new-password"><br><br>
+
                 <input type="submit" value="Sign Up" class="btn">
                 <input type="reset" value="Reset " class="btn">
             </form>
@@ -63,8 +64,11 @@
             <button class="close-modal-2">&times;</button>
             <h1 class="login-head">Login</h1>
             <form action="#">
-            <input type="email" name="email" id="email" autocomplete="email" placeholder="Enter Registered Email or Mobile No."><br><br>
-            <input type="password" name="password" id="password" autocomplete="current-password" placeholder="Enter Password"><br><br>
+
+            <input type="email" name="email-login" id="email-login" autocomplete="email-login" placeholder="Enter Registered Email or Mobile No."><br><br>
+
+            <input type="password" name="current-password"
+             id="current-password" autocomplete="current-password" placeholder="Enter Password"><br><br>
             <input type="submit" value="Login" id="submit-login" class="btn"><br><br>
             <h3 class="login-red login-forgot-pass">Forgot password? <a href="#">Click here.</a></h3><br><br>
             <h3 class="login-red login-forgot-pass">Or Login using <i class="fab fa-facebook-f" onclick="javascript.void(0)"></i><i class="fab fa-google"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-apple"></i></h3>
