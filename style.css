@@ -16,6 +16,8 @@ body{
     overflow-x:hidden;
     margin:0;
     padding:0;
+    display: flex;
+    flex-wrap: wrap;
 }
 a{
     text-decoration: none;
@@ -398,13 +400,5 @@ margin: 0;
     /* background: rgb(179,211,225);
 background: linear-gradient(90deg, rgba(179,211,225,1) 0%, rgba(231,235,250,1) 100%); */
 background:linear-gradient(rgba(0, 0, 0, 0.3) , rgba(255, 255, 255, 0.1)),url('./resource/steven-su-_54S942DIsA-unsplash.jpg')center / cover fixed;
-}
-.footer{
-    background:black;
-    color:white;
-    width: 100%;
-    height: 50vh;
-}
-footer a{
-    color:white;
+width:100%;
 }
