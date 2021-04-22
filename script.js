@@ -26,7 +26,7 @@ document.addEventListener('keydown' , function(e){
         closeNav()
     }
 })
-const openNav = function () {
+let openNav = function () {
     document.getElementById("sideNav").style.width = "500px";
     document.getElementById("main").style.marginLeft = "500px";
     document.body.classList.add('background-new');
@@ -124,6 +124,7 @@ document.addEventListener("keydown", function (w) {
     closeModal2();
   }
 });
+
 
 let password = document.getElementsByClassName('password1');
 let password_confirm = document.getElementsByClassName('password2');

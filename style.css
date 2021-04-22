@@ -16,6 +16,8 @@ body{
     overflow-x:hidden;
     margin:0;
     padding:0;
+    display: flex;
+    flex-wrap: wrap;
 }
 a{
     text-decoration: none;
@@ -86,7 +88,7 @@ a{
     font-size: 10vh;
     width:max-content;
     margin-left: 40%;
-    margin-top: -10vh;
+    margin-top: -8vh;
 }
 .card-container{
     overflow-x: scroll;
@@ -100,7 +102,7 @@ a{
     box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
     background: rgb(0, 0, 0);
     color: white;
-    border-radius: 1vh;
+    
 }
 
 .img-card{
@@ -398,13 +400,108 @@ margin: 0;
     /* background: rgb(179,211,225);
 background: linear-gradient(90deg, rgba(179,211,225,1) 0%, rgba(231,235,250,1) 100%); */
 background:linear-gradient(rgba(0, 0, 0, 0.3) , rgba(255, 255, 255, 0.1)),url('./resource/steven-su-_54S942DIsA-unsplash.jpg')center / cover fixed;
+width:100%;
 }
-.footer{
-    background:black;
-    color:white;
-    width: 100%;
-    height: 50vh;
-}
-footer a{
-    color:white;
+
+@media screen and (max-width:576px){
+    body{
+        background:red;
+        max-width: 576px;
+        overflow-x: hidden;
+    }
+    .heading{
+        font-size: 5vh;
+        margin: 0;
+        padding-left: 15vh;
+        width: max-content;
+        margin-top: -5vh;
+    }
+    #button{
+        margin: 0.5vh;
+        background:black;
+        font-size: 1.5vh;
+        width:12vh;
+        padding:1.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    }
+    .button-container{
+        max-width:12vh;
+        margin-top: -15%;
+        margin-left: 70%;
+    }
+    .paral{
+        background: url(./resource/sneaker-cl1.jpg)center / cover  ;
+        background-attachment: fixed;
+    }
+    .card-container{
+        max-width: 360px;
+    }
+    .card{
+        margin: 0;
+        margin-left: 1vh;
+    }
+    .content-midpage{
+        max-width:576px;
+        overflow: hidden;
+    }
+    .content-midpage img{
+        height:250px;
+    }
+    .one{
+        height:65vh;
+    }
+    .large-img{
+        margin-left: 2vh;
+    }
+    .card-container{
+        padding:1rem;
+    }
+    .cactus-title{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: -20vh;
+    margin-top: -9vh;
+    }
+    .cactus-jack{
+        background: rgb(0, 0, 0);
+    }
+    .cactus-jack img{
+        margin-top: 10vh;
+    }
+    .cactus-button{
+        width: 25vh;
+        margin-left: -10vh;
+        margin-top:25vh ;
+    }
+    .modal{
+        top:50%;
+        left:50%;
+        width:400px;
+    }
+    form{
+        margin-left: 10vw;
+    }
+    input{
+        width:80vw;
+    }
+    .btn{
+        width:20vw;
+    }
+    .modal-2{
+        top:50%;
+        left:50%;
+        width:380px;
+    }
+    .modal-2 input{
+        margin-left:-6vw;
+    }
+    .login-forgot-pass{
+        margin-left: -50px;;
+    }
+    #submit-login{
+        margin-left: 15vh;
+    }
 }
