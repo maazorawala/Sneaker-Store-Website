@@ -129,7 +129,7 @@ document.addEventListener("keydown", function (w) {
 let password = document.getElementsByClassName('password1');
 let password_confirm = document.getElementsByClassName('password2');
 
-function lenghtPassword(){if(password.value.length <= 7){
+function lenghtPassword(){if(password.value.length <= 8){
     password_confirm.setCustomValidity("Password length must be greater than 8")
     password.setCustomValidity("Password length must be greater than 8");
 }
