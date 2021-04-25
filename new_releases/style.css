@@ -1,0 +1,147 @@
+html{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.mysideNav::-webkit-scrollbar{
+    display: none;
+}
+body{
+    color:black;
+    background:#EBEBEB;
+    font-family: 'Raleway', sans-serif;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.mysideNav a{
+    font-size:4.6vh;
+    text-decoration:none;
+    text-decoration: none;
+    display: block;
+    padding: 8vh;
+    text-align: center;
+    background:#000;
+    color: rgba(255,255,255,0.5 );
+    transition:0.3s ease-out;
+}
+.mysideNav{
+    border:2px solid black;
+    display:block;  
+    z-index: 1;
+    transition: 0.5s;
+    overflow-x: hidden;
+    width: 0px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+}
+.heading{
+    text-align:center;
+    font-size: 10vh;
+    width:max-content;
+    margin-left: 40%;
+    margin-top: -8vh;
+}
+#sideNav{
+    position: fixed;
+}
+.mysideNav a:hover{
+    color: white; 
+    transition: 0.5s;
+}
+#main{
+    transition:0.5s;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#load{
+    border:black 5px solid;
+    border-top:5px transparent solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    display: flex;
+    animation:spin 1s linear infinite;
+}
+@keyframes spin{
+        100%{
+            transform:rotate(360deg);
+        }
+}
+.center{
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+}
+#main{
+    transition:0.5s;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+.card-container{
+    width:98%;
+    overflow-x: scroll;
+    width:100%;
+    display:flex;
+    margin:1vh;
+}
+.img-card{
+    height:42vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    background: rgb(255, 255, 255);
+    transition:0.4s ease-in-out;
+    margin:2vh;
+}
+.card{
+    height:52vh;
+    transition:0.4s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    background: rgb(255, 255, 255);
+    transition:0.4s ease-in-out;
+    margin:1vh;
+    transition:0.5s ease-in-out;
+    
+}
+.card-container::-webkit-scrollbar{
+    display:none;
+}
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    color:rgb(0, 0, 0);
+    transition:0.5s ease-in-out;
+}
+.card:hover .img-card{
+    transition:0.5s;
+    height: 47vh;
+}

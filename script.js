@@ -1,5 +1,5 @@
 'use strict'
-
+/*arrow key fucntion for card sneakers*/ 
 document.addEventListener('keypress', function(a){
     if(a.key === 'ArrowRight'){
         document.querySelector(".card-container").scrollTo({ left: 900, behavior: "smooth" });
@@ -10,7 +10,9 @@ document.addEventListener('keypress' , function(b){
         document.querySelector(".card-container").scrollTo({left:-900, behavior: "smooth"});
     }
 })
+/*arrow key fucntion for card sneakers*/ 
 
+/**Loader function */
 document.onreadystatechange = () =>{
     if(document.readyState != "complete"){
         document.querySelector("#load").style.visibility="visible";
@@ -21,14 +23,20 @@ document.onreadystatechange = () =>{
         document.body.style.visibility="visible";
     }
 }
+/**Loader function */
+
+/**Close sidenav with escape key function */
 document.addEventListener('keydown' , function(e){
     if(e.key === 'Escape'){
         closeNav()
     }
 })
+/**Close sidenav with escape key function */
+
+/**opening and closing sidenav */
 let openNav = function () {
-    document.getElementById("sideNav").style.width = "500px";
-    document.getElementById("main").style.marginLeft = "500px";
+    document.getElementById("sideNav").style.width = "700px";
+    document.getElementById("main").style.marginLeft = "700px";
     document.body.classList.add('background-new');
 }
 const closeNav = function() {
@@ -36,6 +44,9 @@ const closeNav = function() {
     document.getElementById("main").style.marginLeft = "0";
     document.body.classList.remove("background-new");
 }
+/**opening and closing sidenav */
+
+/**opacity on scroll function */
 const checkpoint = 450;
 
 window.addEventListener("scroll", function()  {
@@ -75,8 +86,10 @@ window.addEventListener("scroll" , function(){
         document.querySelector(".dior").style.delay = "0.5s";
     }
 })
+/**opacity on scroll function */
 
 
+/**Login and Signup Modal open and close also with input fields working  */
 const modal = document.querySelector('.modal');
 const modal2 = document.querySelector(".modal-2");
 const overlay = document.querySelector('.overlay');
@@ -124,8 +137,10 @@ document.addEventListener("keydown", function (w) {
     closeModal2();
   }
 });
+/**Login and Signup Modal open and close also with input fields working  */
 
 
+/**Password field functioning with length and password conforming feilds on Sing Up modal */
 let password = document.getElementsByClassName('password1');
 let password_confirm = document.getElementsByClassName('password2');
 
@@ -151,3 +166,4 @@ validatePassword();
 }
 password.onchange = lenghtPassword;
 password_confirm.onchange = lenghtPassword;
+/**Password field functioning with length and password conforming feilds on Sing Up modal */
