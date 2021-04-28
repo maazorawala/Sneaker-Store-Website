@@ -4,7 +4,15 @@ html{
     padding:0;
 }
 body::-webkit-scrollbar{
-    display: none;
+        height: 6px;
+        width: 10px;
+        background: rgb(0, 0, 0);
+        display: flex;
+}
+body::-webkit-scrollbar-thumb{
+        background: rgb(2,255,78);
+background: linear-gradient(90deg, rgba(2,255,78,1) 0%, rgba(154,212,214,1) 100%);
+        border-radius: 1px;
 }
 .mysideNav::-webkit-scrollbar{
     display: none;
@@ -96,52 +104,45 @@ a{
     width:100%;
 }
 .card-container{
-    width:98%;
     overflow-x: scroll;
     width:100%;
-    display:flex;
+    display:inline-flex;
     margin:1vh;
-}
-.img-card{
-    height:42vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
-    justify-self:center;
-    background: rgb(255, 255, 255);
-    transition:0.4s ease-in-out;
-    margin:2vh;
-}
-.card{
-    height:52vh;
-    transition:0.4s ease-in-out;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
-    justify-self:center;
-    background: rgb(255, 255, 255);
-    transition:0.4s ease-in-out;
-    margin:1vh;
-    transition:0.5s ease-in-out;
     
+    /* border:0.5px solid black; */
+
 }
+
 .card-container::-webkit-scrollbar{
     display:none;
 }
-.card-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
-    justify-self:center;
-    color:rgb(0, 0, 0);
-    transition:0.5s ease-in-out;
+.card{
+    margin:2vh;
+    width:40vw;
+    position: relative;
 }
-.card:hover .img-card{
-    transition:0.5s;
-    height: 47vh;
+.card img{
+    /* border:0.5px solid black; */
+    height:65vh;
+    padding:1rem;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    color:white;
+    transform: translate(-50%, -50%);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.card:hover .overlay {
+    opacity: 1;
 }
