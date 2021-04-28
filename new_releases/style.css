@@ -1,0 +1,148 @@
+html{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+}
+body::-webkit-scrollbar{
+        height: 6px;
+        width: 10px;
+        background: rgb(0, 0, 0);
+        display: flex;
+}
+body::-webkit-scrollbar-thumb{
+        background: rgb(2,255,78);
+background: linear-gradient(90deg, rgba(2,255,78,1) 0%, rgba(154,212,214,1) 100%);
+        border-radius: 1px;
+}
+.mysideNav::-webkit-scrollbar{
+    display: none;
+}
+body{
+    color:black;
+    background:#EBEBEB;
+    font-family: 'Raleway', sans-serif;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.mysideNav a{
+    font-size:4.6vh;
+    text-decoration:none;
+    text-decoration: none;
+    display: block;
+    padding: 8vh;
+    text-align: center;
+    background:#000;
+    color: rgba(255,255,255,0.5 );
+    transition:0.3s ease-out;
+}
+.mysideNav{
+    border:2px solid black;
+    display:block;  
+    z-index: 1;
+    transition: 0.5s;
+    overflow-x: hidden;
+    width: 0px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+}
+.heading{
+    text-align:center;
+    font-size: 10vh;
+    width:max-content;
+    margin-left: 40%;
+    margin-top: -8vh;
+}
+#sideNav{
+    position: fixed;
+}
+.mysideNav a:hover{
+    color: white; 
+    transition: 0.5s;
+}
+#main{
+    transition:0.5s;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#load{
+    border:black 5px solid;
+    border-top:5px transparent solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    display: flex;
+    animation:spin 1s linear infinite;
+}
+@keyframes spin{
+        100%{
+            transform:rotate(360deg);
+        }
+}
+.center{
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+}
+#main{
+    transition:0.5s;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+.card-container{
+    overflow-x: scroll;
+    width:100%;
+    display:inline-flex;
+    margin:1vh;
+    
+    /* border:0.5px solid black; */
+
+}
+
+.card-container::-webkit-scrollbar{
+    display:none;
+}
+.card{
+    margin:2vh;
+    width:40vw;
+    position: relative;
+}
+.card img{
+    /* border:0.5px solid black; */
+    height:65vh;
+    padding:1rem;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    color:white;
+    transform: translate(-50%, -50%);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.card:hover .overlay {
+    opacity: 1;
+}
