@@ -75,8 +75,8 @@ a{
     width:100%;
 }
 #load{
-    border:black 5px solid;
-    border-top:5px transparent solid;
+    border:rgb(255, 0, 0) 10px solid;
+    border-top:10px transparent solid;
     border-radius: 50%;
     height: 100px;
     width: 100px;
