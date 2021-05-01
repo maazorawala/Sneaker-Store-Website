@@ -7,7 +7,7 @@ html{
 body::-webkit-scrollbar{
         height: 6px;
         width: 10px;
-        background: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
         display: flex;
 }
 body::-webkit-scrollbar-thumb{
@@ -192,5 +192,5 @@ background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgb(53, 122, 115) 1
 }
 #a-12{
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(132,59,98,1) 100%);
+background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(132,59,98,1) 100%);
 }
