@@ -213,10 +213,9 @@ background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(132,59,98,1) 100%);
         display: flex;
     }
     .card{
-        width:max-content;
+        width:110vw;
     }
     .card img{
         height: 50vh;
-        padding:1vh;
     }
 }
