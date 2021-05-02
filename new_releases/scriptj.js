@@ -6,6 +6,9 @@ let openNav = function () {
 }
 let closeNav = function() {
     document.getElementById("sideNav").style.width = "0";
+    document.querySelector('.open-sidenav').onclick = function(){
+        document.getElementById("sideNav").style.width = "100%";
+    }
     document.getElementById("main").style.marginLeft = "0";
     document.body.classList.remove("background-new");
 }
@@ -28,6 +31,3 @@ document.onreadystatechange = () =>{
     }
 }
 /**Loader function */
-document.querySelector('#open-navbar').onclick = function(){
-    document.getElementById("sideNav").style.width = "100%";
-}

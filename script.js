@@ -37,12 +37,11 @@ document.addEventListener('keydown' , function(e){
 let openNav = function () {
     document.getElementById("sideNav").style.width = "700px";
     document.getElementById("main").style.marginLeft = "700px";
-    document.body.classList.add('background-new');
+    
 }
 const closeNav = function() {
     document.getElementById("sideNav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
-    document.body.classList.remove("background-new");
 }
 /**opening and closing sidenav */
 
@@ -167,6 +166,3 @@ validatePassword();
 password.onchange = lenghtPassword;
 password_confirm.onchange = lenghtPassword;
 /**Password field functioning with length and password conforming feilds on Sing Up modal */
-document.querySelector('#open-navbar').onclick = function(){
-    document.getElementById("sideNav").style.width = "100%";
-}
