@@ -2,6 +2,7 @@ html{
     scroll-behavior: smooth;
     margin:0;
     padding:0;
+    
 }
 body::-webkit-scrollbar{
         height: 6px;
@@ -18,8 +19,8 @@ background: linear-gradient(90deg, rgba(2,255,78,1) 0%, rgba(154,212,214,1) 100%
     display: none;
 }
 body{
-    color:black;
-    background:#EBEBEB;
+    color:rgb(255, 255, 255);
+    background:#000000;
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
     margin:0;
@@ -43,7 +44,6 @@ a{
     transition:0.3s ease-out;
 }
 .mysideNav{
-    border:2px solid black;
     display:block;  
     z-index: 1;
     transition: 0.5s;
@@ -75,8 +75,8 @@ a{
     width:100%;
 }
 #load{
-    border:black 5px solid;
-    border-top:5px transparent solid;
+    border:rgb(255, 0, 0) 10px solid;
+    border-top:10px transparent solid;
     border-radius: 50%;
     height: 100px;
     width: 100px;
@@ -118,7 +118,7 @@ a{
 }
 .card{
     margin:2vh;
-    width:40vw;
+    width:42vw;
     position: relative;
 }
 .card img{
@@ -143,6 +143,54 @@ a{
     opacity: 0;
     transition: 0.5s ease;
 }
-.card:hover .overlay {
+.card:hover .overlay{
     opacity: 1;
+}
+#a-1{
+    background: rgb(250,121,156);
+background: linear-gradient(90deg, rgba(250,121,156,1) 0%, rgba(207,115,115,1) 100%);
+}
+#a-2{
+    background: rgb(138,234,146);
+background: linear-gradient(90deg, rgba(138,234,146,1) 0%, rgba(128,173,160,1) 100%);   
+}
+#a-3{
+    background: rgb(255,253,254);
+background: linear-gradient(90deg, rgba(255,253,254,1) 0%, rgba(85,214,194,1) 100%);
+}
+#a-4{
+    background: rgb(213,213,213);
+background: linear-gradient(90deg, rgba(213,213,213,1) 0%, rgba(82,146,176,1) 100%);
+}
+#a-5{
+    background: rgb(213,213,213);
+background: linear-gradient(90deg, rgb(255, 73, 73) 0%, rgba(247,92,3,1) 100%);
+}
+#a-6{
+    background: rgb(241,196,15);
+background: linear-gradient(90deg, rgb(255, 0, 136) 0%, rgb(255, 33, 63) 100%);
+}
+#a-7{
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(48,99,142,1) 90%);
+}
+#a-8{
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(58,29,105,1) 100%);
+}
+#a-9{
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(65,2,23,1) 100%);
+}
+#a-10{
+    background: rgb(103,0,116);
+background: linear-gradient(90deg, rgba(103,0,116,1) 0%, rgba(66,210,218,1) 100%);
+}
+#a-11{
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgb(53, 122, 115) 100%);
+}
+#a-12{
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(132,59,98,1) 100%);
 }
