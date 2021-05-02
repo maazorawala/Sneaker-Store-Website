@@ -28,3 +28,6 @@ document.onreadystatechange = () =>{
     }
 }
 /**Loader function */
+document.querySelector('#open-navbar').onclick = function(){
+    document.getElementById("sideNav").style.width = "100%";
+}

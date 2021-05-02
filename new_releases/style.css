@@ -209,7 +209,9 @@ background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(132,59,98,1) 100%);
         margin-top: -5vh;
     }
     .card-container{
-        max-width: 360px;
+        max-width: 95%;
+        
+        display: flex;
     }
     .card{
         width:100vw;

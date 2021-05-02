@@ -167,3 +167,6 @@ validatePassword();
 password.onchange = lenghtPassword;
 password_confirm.onchange = lenghtPassword;
 /**Password field functioning with length and password conforming feilds on Sing Up modal */
+document.querySelector('#open-navbar').onclick = function(){
+    document.getElementById("sideNav").style.width = "100%";
+}
