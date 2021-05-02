@@ -29,3 +29,10 @@ document.onreadystatechange = () =>{
 }
 /**Loader function */
 
+if(document.body.style.maxWidth="576px"){
+    openNav = function () {
+    document.getElementById("sideNav").style.width = "400px";
+    document.getElementById("main").style.marginLeft = "400px";
+    document.body.classList.add('background-new');
+}
+}
