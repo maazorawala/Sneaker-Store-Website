@@ -44,3 +44,13 @@ const closeNav = function() {
     document.body.classList.remove("background-new");
 }
 /**opening and closing sidenav */
+var btnContainer = document.getElementById("mybtnContainer");
+var btns = btnContainer.getElementsByClassName("btn-style");
+for (var i = 0; i < btns.length; i++){
+    btns[i].addEventListener("click", function(){
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active", "")
+        })
+    })
+}
