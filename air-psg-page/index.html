@@ -9,7 +9,7 @@
     <link rel="stylesheet" rel="preload" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="./resource/og-icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="../resource/og-icon.png     " type="image/x-icon">
 <link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8" />
   <meta name="theme-color" content="#EBEBEB"/>
 <body>
@@ -29,6 +29,54 @@
         <a href="#">Sale</a>
     </div>
     <h1 class="heading" id="top">X-Hype</h1>
+    <div class="button-container">
+        <button class="show-modal" id="button">Sing Up</button>
+        <button class="show-modal-2" id="button" >Sign In</button>
+    </div>
+
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h1 class="main-head">Sign Up </h1><br>
+            <h3 class="sub-heading">Signup here to get the latest updates from us</h3><br><br>
+            <form action="#" class="form">
+
+                <input required type="text"  placeholder="First Name" name="fname" id="fname"><br><br>
+
+                <input type="text" required placeholder="Last Name" name="lname" id="lname"><br><br>
+
+                <input type="date" required placeholder="DOB" name="dob" title="Date of Birth " id="dob"><br><br>
+
+                <input type="tel" required  name="mobile" placeholder="Enter Mobile No." id="mobile"><br><br>
+
+                <input type="email" required placeholder="Email" name="email-id" id="email-id"><br><br>
+
+                <input type="password" autocomplete="new-password" required  placeholder="Enter Password atleast 8 characters" name="password" class="password1"  id="new-password"><br><br>
+
+                <input type="password" required autocomplete="new-password" placeholder="Confirm Password" name="password" class="password2" id="new-password"><br><br>
+
+                <input type="submit" value="Sign Up" class="btn">
+                <input type="reset" value="Reset " class="btn">
+            </form>
+            <p class="login-red" id="sign-up-red">Already have an account? <a href="#" onclick="openModal2(), closeModal()">Login here</a></p>
+        </div>
+
+        <div class="overlay hidden"></div>
+        <div class="modal-2 hidden">
+            <button class="close-modal-2">&times;</button>
+            <h1 class="login-head">Login</h1>
+            <form action="#">
+
+            <input type="email" name="email-login" id="email-login" autocomplete="email-login" placeholder="Enter Registered Email or Mobile No."><br><br>
+
+            <input type="password" name="current-password"
+             id="current-password" autocomplete="current-password" placeholder="Enter Password"><br><br>
+            <input type="submit" value="Login" id="submit-login" class="btn"><br><br>
+            <h3 class="login-red login-forgot-pass">Forgot password? <a href="#">Click here.</a></h3><br><br>
+            <h3 class="login-red login-forgot-pass">Or Login using <i class="fab fa-facebook-f" onclick="javascript.void(0)"></i><i class="fab fa-google"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-apple"></i></h3>
+            </form>
+        </div>
+
+        <div class="overlay-2 hidden"></div>
     <div class="shoe-container-slider">
         <div class="shoe-img">
             <img src="../resource/air-psg-1.png" alt="air-psg-1">
@@ -54,20 +102,43 @@
                 </h2>
             </div>
 
+        <div class="size-chart">
+            <h2 >Select Size</h2>
+            <a href="https://www.nike.com/in/size-fit/mens-footwear" target="_blank " class="select-size">Size guide</a>
+        </div>
         <div class="btnContainer" id="mybtnContainer">
-                <button  class="btn-style" id="1-btn">
-                    Button 1
+                <button class="btn-style" id="1-btn">
+                    US 7
                 </button>
                 <button class="btn-style" id="2-btn">
-                    Button 2
+                    US 8
                 </button>
                 <button class="btn-style" id="3-btn">
-                    Button 3
+                    US 9
+                </button>
+                <button class="btn-style" id="4-btn">
+                    US 9
+                </button>
+                <button class="btn-style" id="5-btn">
+                    US 10
+                </button>
+                <button class="btn-style" id="6-btn">
+                    US 11
+                </button>
+                <button class="btn-style" id="7-btn">
+                    US 12
                 </button>
         </div>
+        <div class="add-fav-buttons-container">
+            <button class="add-button-style" id="add-to-bag">Add to bag</button>
+            <button class="add-button-style" id="fav-button">Favourite    <i class="far fa-heart"></i></button>
         </div>
+        <h3 class="descrip-shoe">
+            Step into style with the Air Jordan 1 Zoom Air Comfort x Paris Saint-Germain. Adding another chapter to the iconic silhouette's history, this version uses a soft suede with a microfibre lining and upgraded full-length Zoom cushioning underfoot. Building on a long-time partnership with Jordan Brand, this colourway features hues and details inspired by the historic French football club.
+        </h3>
     </div>
     </div>
+</div>
 <script src="./script.js"></script>
   
 </body>

@@ -44,13 +44,53 @@ const closeNav = function() {
     document.body.classList.remove("background-new");
 }
 /**opening and closing sidenav */
-var btnContainer = document.getElementById("mybtnContainer");
-var btns = btnContainer.getElementsByClassName("btn-style");
-for (var i = 0; i < btns.length; i++){
-    btns[i].addEventListener("click", function(){
-        btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace("active", "")
-        })
-    })
+
+/**Login and Signup Modal open and close also with input fields working  */
+const modal = document.querySelector('.modal');
+const modal2 = document.querySelector(".modal-2");
+const overlay = document.querySelector('.overlay');
+const overlay2 = document.querySelector(".overlay-2");
+const btnCloseModal = document.querySelector('.close-modal');
+const btnOpenModal = document.querySelectorAll('.show-modal');
+const btnCloseModal2 = document.querySelector(".close-modal-2");
+const btnOpenModal2 = document.querySelectorAll(".show-modal-2");
+
+const openModal = function() {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
 }
+const closeModal = function() {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+};
+for(let i = 0; i<btnOpenModal.length; i++){
+    btnOpenModal[i].addEventListener('click', openModal)
+}
+btnCloseModal.addEventListener('click' , closeModal);
+overlay.addEventListener('click' , closeModal);
+document.addEventListener("keydown", function (v) {
+  if (v.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
+
+
+const openModal2 = function () {
+    modal2.classList.remove("hidden");
+    overlay2.classList.remove("hidden");
+};
+const closeModal2 = function () {
+  modal2.classList.add("hidden");
+  overlay2.classList.add("hidden");
+};
+for (let r = 0; r < btnOpenModal2.length; r++) {
+  btnOpenModal2[r].addEventListener("click", openModal2);
+}
+btnCloseModal2.addEventListener("click", closeModal2);
+overlay2.addEventListener("click", closeModal2);
+document.addEventListener("keydown", function (w) {
+  if (w.key === "Escape" && !modal2.classList.contains("hidden")) {
+    closeModal2();
+  }
+});
+/**Login and Signup Modal open and close also with input fields working  */
