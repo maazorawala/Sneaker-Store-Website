@@ -11,8 +11,8 @@ body::-webkit-scrollbar{
     display: none;
 }
 body{
-    color:black;
-    background:#EBEBEB;
+    color:rgb(255, 255, 255);
+    background:#000000;
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
     margin:0;
@@ -36,7 +36,7 @@ a{
     transition:0.3s ease-out;
 }
 .mysideNav{
-    border:2px solid black;
+    
     display:block;  
     z-index: 1;
     transition: 0.5s;
@@ -97,27 +97,25 @@ a{
     margin-top: -8vh;
 }
 .shoe-container-slider{
-    border:0.5px solid black;
+    
     height: max-content;
     margin:80px;
     display: flex;
 }
 .shoe-img{
     width:65%;
-    border: 0.5px solid black;
 }
 .shoe-img img{
     width: 45%;
     margin:18px;
     display:inline-flex; 
-    background-color: rgb(255, 255, 255);
+    
     cursor: pointer;
     transition:0.5s ease-in-out;
-
 }
 .shoe-content{
     width:35%;
-    border: 2px solid black;
+    
     margin: 20px;
 }
 .shoe-img img:hover{
@@ -127,6 +125,7 @@ a{
 .title-shoe-type{
     font-size: 20px;
     font-weight: 400;
+    
 }
 .head-shoe{
     font-weight:1500;
@@ -143,20 +142,253 @@ a{
 }
 .btnContainer{
     margin-top: 50px;
+    margin:2vw; 
+    
 }
 .btn-style {
     padding: 15px;
-    cursor: pointer;
     font-size: 2vh;
-    border:0.5px solid rgb(0, 0, 0);
+    border:1px solid rgb(255, 255, 255);
     margin:10px;
-    font-weight: 900;
+    font-weight:1000;
     font-family: 'Raleway', sans-serif;
+    padding-left:40px;
+    padding-right:40px;
+    border-radius:10px;
+    transition:0.5s ease-in-out;
+    margin-top:10px; 
+    max-width:full-width;
+    overflow:hidden;
+    
 }
 .btn-style:hover{
-    background-color: rgb(231, 228, 228);
+    background-color: rgb(0, 0, 0);
+    color:white;
+    transition:0.3s;
+    cursor:pointer;
 }
-.btn-style.active {
-  background-color: #666;
-  color: white;
+.size-chart{
+    display:flex;
+    overflow-y: none;
+    
+}
+.size-chart a {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: gray;
+    text-decoration: underline;
+    margin:0;
+    padding:0;
+    display:inline-flex;
+    margin-left: 55%;
+    margin-top: 20px;
+}
+
+#button{
+    font-size: 3vh;
+    cursor: pointer;
+    margin-top: 0vh;
+    margin-left: 3vh;
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 900;
+    background:#272727;
+    color:white;
+    border-radius: 10vh;
+    padding:1.5vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    transition: 0.3s ease-in-out;
+    display: inline;
+    border:0px transparent solid;
+}
+#button:hover{
+    color: #272727;
+    background:white;
+    border:0.5px solid black;
+    transition: 0.5s ease-in-out;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 50%;
+    background:white;
+    padding:1.5vh;
+    z-index: 10;
+    animation:animatetop 0.3s linear ;
+    animation-fill-mode: forwards;
+    color: black;
+    
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    z-index: 5;
+}
+.modal-2{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 50%;
+    background:white;
+    padding:2vh;
+    z-index: 10;
+    animation:animatetop 0.3s linear ;
+    animation-fill-mode: forwards;
+}
+.overlay-2{
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    position:fixed;
+    z-index: 5;
+}
+.opacity{
+    opacity:0;
+}
+.hidden{
+    display:none;
+}
+.close-modal{
+    font-size:4.6vh;
+    text-decoration:none;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    transition:0.3s ease-out;
+    border: 1px transparent solid;
+    background:transparent;
+    cursor: pointer;
+}
+.close-modal-2{
+    font-size:4.6vh;
+    text-decoration:none;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    transition:0.3s ease-out;
+    border: 1px transparent solid;
+    background:transparent;
+    cursor: pointer;
+}
+
+input{
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif; 
+    padding:1.5vh;
+    width: 22vw;
+    font-size:2.5vh ;
+    border-radius: 10vh;
+    border: 1px grey solid;
+    margin-top: 0.5vh;
+}
+form{
+    margin-left: 30vh;
+    color: black;
+}
+.btn {
+    margin-left: 0vh;
+    width: 10vw;
+    background: black;
+    border:0px transparent solid;
+    padding:1vh;
+    color:white;
+    border-radius: 10vh;
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background:white;
+    color:black;
+    border:1px rgba(0, 0, 0, 1) solid;
+    transition: 0.3s;
+}
+.login-red{
+    font-size: 2.5vh;
+    font-weight: 900;
+    margin:0;
+    margin-left:8%;
+    
+}
+.login-red a:hover{
+    text-decoration: underline;
+}   
+.login-head{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    
+}
+#submit-login{
+    margin-left:12%;
+}
+i{
+    font-size: 3vh;
+    cursor:pointer;
+    margin:1vh;
+}
+.main-head , .sub-heading{
+    text-align: center;
+    margin: 0;
+}
+.main-head{
+    font-size: 5vh;
+}
+#sign-up-red{
+    text-align: center;
+    margin-left: -50px;
+}
+.button-container{
+    width:60vh;
+    height:10vh;
+    margin-left: 78%;
+    margin-top: -8%;
+}  
+.add-fav-buttons-container{
+    
+}
+.add-button-style{
+    padding: 20px;
+    width: 22vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    margin-left: 15%;
+    margin-top:10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: 1px solid black;
+    background:#272727;
+    color:white;
+    cursor:pointer;
+    transition:0.3s ease-in-out;
+}
+.add-button-style:hover{
+    background:white;
+    color:black;
+    transition:0.3s;
+}
+.add-button-style i{
+    margin:0;
+    padding-left:1vh;
+}
+.descrip-shoe{
+    margin:40px;
+    line-height:1.5;
 }
