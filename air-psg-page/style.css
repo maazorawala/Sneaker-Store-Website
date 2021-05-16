@@ -390,3 +390,6 @@ i{
     margin:40px;
     line-height:1.5;
 }
+.add-button-style:hover #heart-icon{
+    color:red;
+}
