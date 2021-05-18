@@ -253,6 +253,10 @@ a{
     position:fixed;
     z-index: 5;
 }
+@keyframes animatetop {
+  from {opacity: 0}
+  to {opacity: 1}
+}
 .opacity{
     opacity:0;
 }
@@ -392,4 +396,7 @@ i{
 }
 .add-button-style:hover #heart-icon{
     color:red;
+}
+.descp-head{
+    text-align: center;
 }

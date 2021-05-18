@@ -94,3 +94,31 @@ document.addEventListener("keydown", function (w) {
   }
 });
 /**Login and Signup Modal open and close also with input fields working  */
+
+/**Password field functioning with length and password conforming feilds on Sing Up modal */
+let password = document.getElementsByClassName('password1');
+let password_confirm = document.getElementsByClassName('password2');
+
+function lenghtPassword(){if(password.value.length <= 8){
+    password_confirm.setCustomValidity("Password length must be greater than 8")
+    password.setCustomValidity("Password length must be greater than 8");
+}
+else{
+    password_confirm.setCustomValidity("");
+    password.setCustomValidity("");
+    function validatePassword(){
+    if (password.value != password_confirm.value){
+        password_confirm.setCustomValidity("Passwords don't match");
+    }
+    else{
+        password_confirm.setCustomValidity('');
+    }
+    
+}
+validatePassword();
+}
+
+}
+password.onchange = lenghtPassword;
+password_confirm.onchange = lenghtPassword;
+/**Password field functioning with length and password conforming feilds on Sing Up modal */
