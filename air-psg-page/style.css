@@ -478,7 +478,7 @@ footer ul{
 }
 #ul-list{
     width:60%;
-     
+    
     display:flex;
 }
 footer ul li{
@@ -493,6 +493,7 @@ footer ul li{
 }
 .ul-list-header{
     font-size:2rem;
+    letter-spacing: 2px;
 }
 footer .ul-list-header a{
     color:white;
@@ -501,7 +502,7 @@ footer .ul-list-header a{
 .list-item a:hover{
     color:white;
     transition:0.5s;
-     border:0.5px solid white;
+    border:0.5px solid white;
 }
 .ul-list-header a:hover{
     text-decoration:underline;  
@@ -516,7 +517,6 @@ footer .ul-list-header a{
     width:50%;  
 }
 .icon-container{
-     
     display:flex-end;
     align-items: right;
     justify-content: right;
@@ -524,7 +524,6 @@ footer .ul-list-header a{
     align-self: right;
     justify-self:right;
     width:650px;
-    
 }
 .icon-container i{
     color:gray;
