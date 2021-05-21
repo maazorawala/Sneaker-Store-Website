@@ -122,3 +122,15 @@ validatePassword();
 password.onchange = lenghtPassword;
 password_confirm.onchange = lenghtPassword;
 /**Password field functioning with length and password conforming feilds on Sing Up modal */
+/*arrow key fucntion for card sneakers*/ 
+document.addEventListener('keypress', function(a){
+    if(a.key === 'ArrowRight'){
+        document.querySelector(".card-container").scrollTo({ left: 900, behavior: "smooth" });
+    }
+}  )
+document.addEventListener('keypress' , function(b){
+    if(b.key === 'ArrowLeft'){
+        document.querySelector(".card-container").scrollTo({left:-900, behavior: "smooth"});
+    }
+})
+/*arrow key fucntion for card sneakers*/ 

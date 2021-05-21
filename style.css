@@ -97,12 +97,12 @@ a{
     padding: 3rem;
 }
 .card{
-    height: max-content;
+    height: 60vh;
     margin:2vh;
     box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
     background: rgb(0, 0, 0);
     color: white;
-    
+    border-radius:20px;
 }
 
 .img-card{
@@ -115,6 +115,7 @@ a{
     justify-self:center;
     background: rgb(0, 0, 0);
     transition:0.4s ease-in-out;
+    border-radius:20px;
 }
 .paral{
     margin-top: 40px;
@@ -127,10 +128,7 @@ a{
     font-size: 30px;
     background: rgba(255, 255, 255, 0);
 }
-.card:hover .img-card{
-    height: 50vh;
-    transition:0.5s;
-}
+
 .icon{
     font-size: 5vh;
     margin-left: 30%;
@@ -189,8 +187,8 @@ a{
     text-align: center;
 }
 .dior{
-    height:80vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./resource/dior-cactusjack.jpg);
+    height:60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.6)), url(./resource/dior-cactusjack.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -328,7 +326,8 @@ form{
 .card-container::-webkit-scrollbar{
     display:none;
 }
-.card-container:hover.card-container::-webkit-scrollbar{
+
+.card-container::-webkit-scrollbar{
         height: 6px;
         width: 1px;
         background: rgb(0, 0, 0);
@@ -397,9 +396,12 @@ margin: 0;
     color: white;
 }
 .content-midpage img{
-    height: 100vh;
-    margin-left: 0vh;
+    height: 90vh;
+    margin: 40vh;
     z-index: 0;
+    margin-bottom: 0;   
+    margin-top:0;
+
 }
 .display-scrollbar:hover.display-scrollbar::-webkit-scrollbar{
     display: none;
@@ -407,10 +409,13 @@ margin: 0;
 .dior-content{
     /* background: rgb(179,211,225);
 background: linear-gradient(90deg, rgba(179,211,225,1) 0%, rgba(231,235,250,1) 100%); */
-background:linear-gradient(rgba(0, 0, 0, 0.3) , rgba(255, 255, 255, 0.1)),url('./resource/steven-su-_54S942DIsA-unsplash.jpg')center / cover fixed;
+background:linear-gradient(rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.1)),url('./resource/steven-su-_54S942DIsA-unsplash.jpg')center / cover fixed;
 width:100%;
 }
-
+.bottom-content-mid img{
+    margin:0;
+    margin-top:0;
+}
 @media screen and (max-width:576px){
     body{
         background:red;
@@ -455,6 +460,7 @@ width:100%;
     }
     .content-midpage img{
         height:250px;
+        margin: 0vh;
     }
     .one{
         height:65vh;
@@ -512,4 +518,7 @@ width:100%;
     #submit-login{
         margin-left: 15vh;
     }
+}
+.large-cards::-webkit-scrollbar{
+    display:none;
 }

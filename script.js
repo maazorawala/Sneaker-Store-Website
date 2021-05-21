@@ -46,45 +46,45 @@ const closeNav = function() {
 /**opening and closing sidenav */
 
 /**opacity on scroll function */
-const checkpoint = 450;
+// const checkpoint = 450;
 
-window.addEventListener("scroll", function()  {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= checkpoint) {
-    document.querySelector(".card-container").classList.add("opacity") ;
+// window.addEventListener("scroll", function()  {
+//     const currentScroll = window.pageYOffset;
+//     if (currentScroll <= checkpoint) {
+//     document.querySelector(".card-container").classList.add("opacity") ;
     
-}
-else {
-    document.querySelector(".card-container").classList.remove("opacity");
-    document.querySelector(".card-container").style.transition = "0.5s";
-}
-});
-const checkpoint_2 = 850;
+// }
+// else {
+//     document.querySelector(".card-container").classList.remove("opacity");
+//     document.querySelector(".card-container").style.transition = "0.5s";
+// }
+// });
+// const checkpoint_2 = 850;
 
-window.addEventListener("scroll", function () {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= checkpoint_2) {
-    document.querySelector(".large-cards").classList.add("opacity");
-} else {
-    document.querySelector(".large-cards").classList.remove("opacity");
-    document.querySelector(".large-cards").style.transition = "0.5s";
-}
+// window.addEventListener("scroll", function () {
+//     const currentScroll = window.pageYOffset;
+//     if (currentScroll <= checkpoint_2) {
+//     document.querySelector(".large-cards").classList.add("opacity");
+// } else {
+//     document.querySelector(".large-cards").classList.remove("opacity");
+//     document.querySelector(".large-cards").style.transition = "0.5s";
+// }
     
-});
+// });
 
-const checkpoint_3 = 1800;
+// const checkpoint_3 = 1800;
 
-window.addEventListener("scroll" , function(){
-    const currentScroll = window.pageYOffset;
-    if(currentScroll <= checkpoint_3){
-        document.querySelector(".dior").classList.add("opacity");
-    }
-    else{
-        document.querySelector(".dior").classList.remove("opacity");
-        document.querySelector(".dior").style.transition = "0.5s";
-        document.querySelector(".dior").style.delay = "0.5s";
-    }
-})
+// window.addEventListener("scroll" , function(){
+//     const currentScroll = window.pageYOffset;
+//     if(currentScroll <= checkpoint_3){
+//         document.querySelector(".dior").classList.add("opacity");
+//     }
+//     else{
+//         document.querySelector(".dior").classList.remove("opacity");
+//         document.querySelector(".dior").style.transition = "0.5s";
+//         document.querySelector(".dior").style.delay = "0.5s";
+//     }
+// })
 /**opacity on scroll function */
 
 

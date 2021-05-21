@@ -400,3 +400,138 @@ i{
 .descp-head{
     text-align: center;
 }
+
+.card-container{
+    overflow-x: scroll;
+    width:95%;
+    display:flex;
+    padding: 3rem;
+    margin:20px;
+}
+.card{
+    height: max-content;
+    margin:2vh;
+    box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 0.5px rgb(255, 255, 255) solid;
+}
+
+.img-card{
+    height:44vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    background: rgb(238, 237, 237);
+    transition:0.4s ease-in-out;
+}
+.paral{
+    margin-top: 40px;
+    height: 90vh;
+    background: url(./resource/sneaker-cl1.jpg)center / cover fixed ;
+    color: #fff;
+    width: 100%;
+}
+.card-title{
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0);
+}
+
+.icon{
+    font-size: 5vh;
+    margin-left: 30%;
+    margin-bottom: 10vh;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+.onScroll-card{
+    transition: 0.5s;
+    opacity: 1;
+}
+.card-container.card-container::-webkit-scrollbar{
+        height: 2px;
+        width: 1px;
+        background: rgb(255, 255, 255);
+        display: flex;
+}
+.card-container::-webkit-scrollbar-thumb:horizontal{
+        background: rgb(255, 0, 0);
+        
+}
+.card-container::-webkit-scrollbar{
+    display:none;
+}
+footer{
+     
+    color:white;
+    column-count: 2;
+    background:hsl(0deg 5% 5%);
+    height:12%;
+    display:flex;
+}
+footer ul{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#ul-list{
+    width:60%;
+     
+    display:flex;
+}
+footer ul li{
+    margin:18px;
+}
+.list-item  a{
+    font-size:1.1rem;  
+    color:#858585; 
+    letter-spacing: 2px;
+    padding:8px;
+    transition:0.5s ease-in-out;
+}
+.ul-list-header{
+    font-size:2rem;
+}
+footer .ul-list-header a{
+    color:white;
+    
+}
+.list-item a:hover{
+    color:white;
+    transition:0.5s;
+     border:0.5px solid white;
+}
+.ul-list-header a:hover{
+    text-decoration:underline;  
+}
+/* .icons-maps{
+    width:30%;
+} */
+#list-1{
+    width:50%;
+}
+#list-2{
+    width:50%;  
+}
+.icon-container{
+     
+    display:flex-end;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+    align-self: right;
+    justify-self:right;
+    width:650px;
+    
+}
+.icon-container i{
+    color:gray;
+    font-size: 2.5rem;
+    transition:0.3s ease-in-out;
+}
+.icon-container i:hover{
+    color:white;
+    transition:0.3s;
+}
