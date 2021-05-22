@@ -522,3 +522,74 @@ width:100%;
 .large-cards::-webkit-scrollbar{
     display:none;
 }
+
+footer{
+    color:rgb(0, 0, 0);
+    column-count: 2;
+    background:rgb(235, 231, 231);
+    height:8.1%;
+    display:flex;
+}
+footer ul{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#ul-list{
+    width:60%;
+    
+    display:flex;
+}
+footer ul li{
+    margin:18px;
+}
+.list-item  a{
+    font-size:1.1rem;  
+    color:#585858; 
+    letter-spacing: 2px;
+    padding:8px;
+    transition:0.5s ease-in-out;
+}
+.ul-list-header{
+    font-size:2rem;
+    letter-spacing: 2px;
+}
+footer .ul-list-header a{
+    color:rgb(0, 0, 0);
+    
+}
+.list-item a:hover{
+    color:rgb(0, 0, 0);
+    transition:0.5s;
+    border:0.5px solid rgb(0, 0, 0);
+}
+.ul-list-header a:hover{
+    text-decoration:underline;  
+}
+/* .icons-maps{
+    width:30%;
+} */
+#list-1{
+    width:50%;
+}
+#list-2{
+    width:50%;  
+}
+.icon-container{
+    display:flex-end;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+    align-self: right;
+    justify-self:right;
+    width:650px;
+}
+.icon-container i{
+    color:gray;
+    font-size: 2.5rem;
+    transition:0.3s ease-in-out;
+}
+.icon-container i:hover{
+    color:rgb(0, 0, 0);
+    transition:0.3s;
+}
+    
