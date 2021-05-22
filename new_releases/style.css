@@ -195,12 +195,16 @@ background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgb(53, 122, 115) 1
     background: rgb(0,0,0);
 background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(132,59,98,1) 100%);
 }
-
+i{
+    font-size: 3vh;
+    cursor:pointer;
+    margin:1vh;
+}
 footer{
     color:rgb(0, 0, 0);
     column-count: 2;
     background:rgb(235, 231, 231);
-    height:8.1%;
+    height:14%;
     display:flex;
 }
 footer ul{
