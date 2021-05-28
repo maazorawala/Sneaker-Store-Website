@@ -11,8 +11,9 @@ body::-webkit-scrollbar{
     display: none;
 }
 body{
-    color:rgb(255, 255, 255);
-    background:#000000;
+    color:rgb(0, 0, 0);
+    background: rgb(191,191,191);
+background: linear-gradient(90deg, rgba(191,191,191,1) 0%, rgba(218,229,249,1) 100%);
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
     margin:0;
@@ -109,7 +110,7 @@ a{
     width: 45%;
     margin:18px;
     display:inline-flex; 
-    
+    background:#212325;
     cursor: pointer;
     transition:0.5s ease-in-out;
 }
@@ -375,15 +376,15 @@ i{
     font-weight: 900;
     font-size: 1.2rem;
     border-radius: 50px;
-    border: 1px solid black;
-    background:#272727;
-    color:white;
+    border: 1px solid rgb(131, 131, 131);
+    background:#ffffff;
+    color:rgb(0, 0, 0);
     cursor:pointer;
     transition:0.3s ease-in-out;
 }
 .add-button-style:hover{
-    background:white;
-    color:black;
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     transition:0.3s;
 }
 .add-button-style i{
@@ -412,9 +413,10 @@ i{
     height: max-content;
     margin:2vh;
     box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 0.5px rgb(255, 255, 255) solid;
+    background: rgba(255, 255, 255, 0.609);
+    color: rgb(0, 0, 0);
+    border: 0.5px rgb(0, 0, 0) solid;
+    height:450px;
 }
 
 .img-card{
@@ -437,7 +439,7 @@ i{
 }
 .card-title{
     font-size: 30px;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 0, 0, 0);
 }
 
 .icon{
@@ -467,7 +469,7 @@ i{
 footer{
     color:white;
     column-count: 2;
-    background:hsl(0deg 5% 5%);
+    background:rgba(0, 0, 0, 0.904);
     height:12%;
     display:flex;
 }

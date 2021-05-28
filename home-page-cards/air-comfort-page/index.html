@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Hype</title>
+    <script src="https://kit.fontawesome.com/c1ced132ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" rel="preload" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="../../resource/og-icon.png     " type="image/x-icon">
+<link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8" />
+  <meta name="theme-color" content="#EBEBEB"/>
+<body>
+    <div id="main">
+    <div class="load-page">
+        <div id="load" class="center">
+        </div>
+    </div>
+    <span id="open-navbar" style="cursor: pointer; font-size: 70px;width:max-content;" onclick="openNav()" >&#9776;</span>
+    <div class="mysideNav" id="sideNav">
+        <a href="javascript:void(0)" style="font-size: 100px;" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../../new_releases/index.html">New Releases</a>
+        <a href="#">Sneakers</a>
+        <a href="#">Clothing</a>
+        <a href="#">Accessories</a>
+        <a href="#">Sale</a>
+    </div>
+    <h1 class="heading" id="top">X-Hype</h1>
+    <div class="button-container">
+        <button class="show-modal" id="button">Sing Up</button>
+        <button class="show-modal-2" id="button" >Sign In</button>
+    </div>
+
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h1 class="main-head">Sign Up </h1><br>
+            <h3 class="sub-heading">Signup here to get the latest updates from us</h3><br><br>
+            <form action="#" class="form">
+
+                <input required type="text"  placeholder="First Name" name="fname" id="fname"><br><br>
+
+                <input type="text" required placeholder="Last Name" name="lname" id="lname"><br><br>
+
+                <input type="date" required placeholder="DOB" name="dob" title="Date of Birth " id="dob"><br><br>
+
+                <input type="tel" required  name="mobile" placeholder="Enter Mobile No." id="mobile"><br><br>
+
+                <input type="email" required placeholder="Email" name="email-id" id="email-id"><br><br>
+
+                <input type="password" autocomplete="new-password" required  placeholder="Enter Password atleast 8 characters" name="password" class="password1"  id="new-password"><br><br>
+
+                <input type="password" required autocomplete="new-password" placeholder="Confirm Password" name="password" class="password2" id="new-password"><br><br>
+
+                <input type="submit" value="Sign Up" class="btn">
+                <input type="reset" value="Reset " class="btn">
+            </form>
+            <p class="login-red" id="sign-up-red">Already have an account? <a href="#" onclick="openModal2(), closeModal()">Login here</a></p>
+        </div>
+
+        <div class="overlay hidden"></div>
+        <div class="modal-2 hidden">
+            <button class="close-modal-2">&times;</button>
+            <h1 class="login-head">Login</h1>
+            <form action="#">
+
+            <input type="email" name="email-login" id="email-login" autocomplete="email-login" placeholder="Enter Registered Email or Mobile No."><br><br>
+
+            <input type="password" name="current-password"
+             id="current-password" autocomplete="current-password" placeholder="Enter Password"><br><br>
+            <input type="submit" value="Login" id="submit-login" class="btn"><br><br>
+            <h3 class="login-red login-forgot-pass">Forgot password? <a href="#">Click here.</a></h3><br><br>
+            <h3 class="login-red login-forgot-pass">Or Login using <i class="fab fa-facebook-f" onclick="javascript.void(0)"></i><i class="fab fa-google"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-apple"></i></h3>
+            </form>
+        </div>
+
+        <div class="overlay-2 hidden"></div>
+    <div class="shoe-container-slider">
+        <div class="shoe-img">
+            <img src="../../resource/air-com-1.png" alt="air-com--1">
+            <img src="../../resource/air-com-3.png" alt="air-com--3">
+            <img src="../../resource/air-com-2.png" alt="air-com--2">
+            <img src="../../resource/air-com-4.png" alt="air-com--4">
+            <img src="../../resource/air-com-5.png" alt="air-com--5">
+            <img src="../../resource/air-com-6.png" alt="air-com--6">
+        </div>
+        <div class="shoe-content">
+            <h3 class="title-shoe-type">
+                Men's Shoes
+            </h3>
+            <h1 class="head-shoe">
+                Air Jordan 1 Zoom Comfort London Photon Dust Light Smoke Grey
+            </h1>
+            <div class="shoe-title-price">
+                <h1 class="price-show">
+                    ₹ 20,642
+                </h1>
+                <h2 class="description">
+                    Inclusive of all taxes and duties
+                </h2>
+            </div>
+
+        <div class="size-chart">
+            <h2 >Select Size</h2>
+            <a href="https://www.nike.com/in/size-fit/mens-footwear" target="_blank " class="select-size">Size guide</a>
+        </div>
+        <div class="btnContainer" id="mybtnContainer">
+                <button class="btn-style" id="1-btn">
+                    US 7
+                </button>
+                <button class="btn-style" id="2-btn">
+                    US 8
+                </button>
+                <button class="btn-style" id="3-btn">
+                    US 9
+                </button>
+                <button class="btn-style" id="4-btn">
+                    US 9
+                </button>
+                <button class="btn-style" id="5-btn">
+                    US 10
+                </button>
+                <button class="btn-style" id="6-btn">
+                    US 11
+                </button>
+                <button class="btn-style" id="7-btn">
+                    US 12
+                </button>
+        </div>
+        <div class="add-fav-buttons-container">
+            <button class="add-button-style" id="add-to-bag">Add to bag</button>
+            <button class="add-button-style" id="fav-button">Favourite    <i class="far fa-heart" id="heart-icon"></i></button>
+        </div>
+        <h3 class="desp-2">
+        Following the Air Jordan 1 Mid “Milan” and the Air Jordan 1 Low “Paris”, the Air Jordan 1 Zoom Comfort is now in the mix with this London rendition. Officially arriving as a Photon Dust, Light Smoke Grey, and Grey Fog colorway, although not a Retro colorway, expect quite a bit of demand thanks to the sudden surge of Dior-like editions. The upper features a mixture of materials between tumbled leather on the side paneling and toes, smooth leather on overlays and mesh on the cutout Nike Swoosh and ankles. 
+        </h3>
+        <h3 class="descrip-shoe">
+            A “Photon Dust” hue — a potential nod to the UK-based city’s oft-seen foggy weather climate — is visible upon the cut-out Swooshes and leather constructions that make up the mid-foot/toe boxes, as well as the overlays/ankle flaps. The first mentioned possesses tumbled textures while the latter is ironed out with a smooth finish. Further accents take charge through the Zoom tongue branding and ball-and-wings logos, both of which are dyed with a dark teal — likely to translate the Thames River — in addition to the pale peach tones that paint the mesh tongues and collars.
+        </h3>
+        <h3 class="terms">
+            Free Delivery and Returns<br><br>
+        Your order of ₹14,000 or more gets free standard delivery.
+        <br><br><br>
+        
+        Standard Delivery for Postal Codes: 100000-399999, 500000-699999 and 800000-899999 : 4 – 16 business days<br><br>
+        Standard Delivery for Postal Codes: 400000-499999 : 3 – 15 business days<br><br>
+        Standard Delivery for Postal Codes: 700000-799999 and 900000-999999: 5 – 21 business days<br><br>
+        
+        Orders are processed and delivered Monday-Friday (excluding public holidays).
+        
+        
+        Nike Members enjoy free returns. Exclusions apply.
+        </h3>
+        <h3>Style: CV1725-001</h3>
+    </div>
+    </div>
+    <h2 class="also-like-text">YOU MIGHT ALSO LIKE</h2>
+    <div class="card-container" >
+        <a href="#">
+            <div class="card 1">
+                <img src="../../resource/555088-033.png" class="img-card" alt="Air JORDANS">
+                <h3 class="card-title">Air Jordan 1 Retro High Light Army Rust Shadow Patina</h3>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card 2">
+                <img src="../../resource/adidas-yeezy-boost-700-wave-runner.png" class="img-card" >
+                <h3 class="card-title">Adidas Yeezy Boost 700</h3>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card 3">
+                <img src="../../resource/givenchy.png" class="img-card" >
+                <h3 class="card-title">Givenchy Spectre Low Structured Runner Sneakers</h3>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card 4">
+                <img src="../../resource/off-white-1.png" class="img-card" >
+                <h3 class="card-title">OFF-WHITE Off Court 3.0 Hi-top Zebra Print Sneakers</h3>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card 4">
+                <img src="../../resource/off-white-2.png" class="img-card" >
+                <h3 class="card-title">OFF-WHITE 3.0 Off Court Vintage Mid-top Sneaker Green</h3>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card 4">
+                <img src="../../resource/adidas-yzy-qntm-teal-blue.png" class="img-card" >
+                <h3 class="card-title">Adidas Yeezy Quantum “Teal Blue”</h3>
+            </div>
+        </a>
+    </div>
+    <footer>
+        <div id="ul-list">
+        <div id="list-1">
+            <ul class="ul-list-1" style="list-style-type:none;"> 
+                <li class="ul-list-header">
+                    <a href="../../index.html">
+                        X-HYPE
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="../../index.html">
+                        HOME
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="../../new_releases/index.html">
+                        NEW RELEASES
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        SNEAKERs
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        CLOTHING
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        ACCESSORIES
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        SALE 
+                    </a>
+                </li>
+            </ul>
+            </div>
+        <div id="list-2">
+            <ul class="ul-list-1" style="list-style-type:none;"> 
+                <li class="ul-list-header">
+                    <a href="../../new_releases/index.html">
+                        NEW RELEASES
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="../../index.html">
+                        OUR STORES
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="../../new_releases/index.html">
+                        CONTACT US
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        SNEAKERs
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        CLOTHING
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        ACCESSORIES
+                    </a>
+                </li>
+                <a href="#">
+                        <li class="list-item">
+                        SALE 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="#top" class="backTop" style="color:rgb(0, 0, 0);width:250px;height:fit-content;font-size:larger;letter-spacing:5px;  ">BACK TO TOP</a>
+        </div>
+        <div class="icons-maps">
+            <div class="icon-container">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <a href="mailto:maazmaqbool995@gmail.com">
+                    <i class="fas fa-envelope-square"></i>
+                </a>
+                <a href="https://www.instagram.com/maaz.orawala/">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=918999979567" target="_blank">
+                    <i class="fab fa-whatsapp-square" ></i>
+                </a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.554720055963!2d-118.29775038481522!3d34.08092718059815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c758da827523%3A0xa0572135cdff61ae!2sSuper%20K%20Management%20LLC!5e0!3m2!1sen!2sin!4v1621621881105!5m2!1sen!2sin" width="650" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+</div>
+<script src="./script.js"></script>
+  
+</body>
