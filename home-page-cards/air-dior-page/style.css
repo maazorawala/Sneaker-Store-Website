@@ -2,7 +2,6 @@ html{
     scroll-behavior: smooth;
     margin:0;
     padding:0;
-    transition:0.5s ease-in-out;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -28,16 +27,16 @@ a{
 .mysideNav a{
     font-size:4.6vh;
     text-decoration:none;
-    text-decoration: none;
     display: block;
     padding: 8vh;
     text-align: center;
     background:#000;
     color: rgba(255,255,255,0.5 );
     transition:0.3s ease-out;
+
 }
 .mysideNav{
-    
+    position:absolute;
     display:block;  
     z-index: 1;
     transition: 0.5s;

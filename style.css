@@ -10,8 +10,8 @@ body::-webkit-scrollbar{
     display: none;
 }
 body{
-    color:black;
-    background:#EBEBEB;
+    color:rgb(255, 255, 255);
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('./resource/121.jpg');
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
     margin:0;
@@ -94,37 +94,64 @@ a{
     overflow-x: scroll;
     width:100%;
     display:flex;
-    padding: 3rem;
+    padding: 1rem;
 }
 .card{
-    height: 60vh;
-    margin:2vh;
-    margin-left:0vh;
-    margin-right:15vh;
-    box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
+    height: 80vh;
+    width:48vw;
+    margin:10px;
+    box-shadow: -1.5rem -1rem 5rem rgb(93, 88, 80) ;
     background: rgb(0, 0, 0);
     color: white;
     border-radius:20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
 }
-
+.card:hover .img-card{
+    width:46vw;
+    transition:0.2s;
+}
 .img-card{
-    height:44vh;
+    width:45vw;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     align-self: center;
     justify-self:center;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     transition:0.4s ease-in-out;
     border-radius:20px;
 }
 .paral{
     margin-top: 40px;
-    height: 90vh;
-    background: url(./resource/sneaker-cl1.jpg)center / cover fixed ;
-    color: #fff;
-    width: 100%;
+    height: 100vh;
+    background: transparent ;
+    color: rgb(255, 255, 255);
+    background:white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    font-size:3rem;
+    margin:5%;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('./resource/main-1.gif')center;
+    box-shadow: -2.5rem -2rem 0rem rgba(255, 255, 255, 0.233) ;
+}
+.paral h1{
+    border:1px solid white;
+    background:rgba(248, 248, 248, 0.616);
+    color:black;
+    padding:1rem;
+    padding-left: 20%;
+    padding-right:20%;
 }
 .card-title{
     font-size: 30px;
@@ -151,7 +178,7 @@ a{
 #button{
     font-size: 3vh;
     cursor: pointer;
-    margin-top: 0vh;
+    margin-top: 3rem;
     margin-left: 3vh;
     font-family: 'Raleway', sans-serif;  
     font-weight: 900;
@@ -171,15 +198,6 @@ a{
     border:0.5px solid black;
     transition: 0.5s ease-in-out;
 }
-.large-img{
-    height:75vh;
-    margin-left: 7vh;
-    transition: 0.3s ease-in-out;
-    border: 1px transparent solid;
-}
-.large-cards{
-    height:90vh;
-}
 .one{
     height: 75vh;
 }
@@ -188,19 +206,7 @@ a{
     padding-left:10vh;
     text-align: center;
 }
-.dior{
-    height:60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.6)), url(./resource/dior-cactusjack.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
-    justify-self:center;
-    margin:0;
-}
+
 .modal{
     position: fixed;
     top: 50%;
@@ -274,10 +280,6 @@ a{
     background:transparent;
     cursor: pointer;
 }
-.large-img:hover{
-    border: 10px transparent solid;
-    transition: 0.45s  ;
-}
 .main-head , .sub-heading{
     text-align: center;
     margin: 0;
@@ -330,15 +332,7 @@ form{
 }
 
 .card-container::-webkit-scrollbar{
-        height: 6px;
-        width: 1px;
-        background: rgb(0, 0, 0);
-        display: flex;
-}
-.card-container::-webkit-scrollbar-thumb:horizontal{
-        background: rgb(2,255,78);
-background: linear-gradient(90deg, rgba(2,255,78,1) 0%, rgba(154,212,214,1) 100%);
-        border-radius: 10px;
+        display: none;
 }
 .login-head{
     text-align: center;
@@ -354,70 +348,8 @@ i{
     cursor:pointer;
     margin:1vh;
 }
-.cactus-jack{
-    background: rgb(0, 0, 0);
-column-count: 2 ;
-color: white;
-font-family: 'lemon_milkbold_italic';
-margin: 0;
-}
-.cactus-title{
-    padding-top: 10vh;
-}
-.cactus-button{
-    margin-left: 0vh;
-    width: 15vw;
-    background:white;
-    border:0px transparent solid;
-    padding:2vh;
-    color:rgb(0, 0, 0);
-    border-radius: 10vh;
-    cursor:pointer;
-    transition: 0.3s ease-in-out; 
-    font-family: 'lemon_milkbold_italic';
-    font-size: 3vh;
-    margin-top: 2vh;
-}
-.cactus-button:hover{
-    background: linear-gradient(90deg, rgb(192, 138, 90) 0%, rgb(146, 91, 75) 100%);
-    color:rgb(255, 255, 255);
-    border:1px rgba(0, 0, 0, 1) solid;
-    transition: 0.3s;
-}
-.content-midpage{
-    width:100%;
-    margin:0;
-    padding:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
-    justify-self:center;
-    background: black;
-    color: white;
-}
-.content-midpage img{
-    height: 90vh;
-    margin: 40vh;
-    z-index: 0;
-    margin-bottom: 0;   
-    margin-top:0;
 
-}
-.display-scrollbar:hover.display-scrollbar::-webkit-scrollbar{
-    display: none;
-}
-.dior-content{
-    /* background: rgb(179,211,225);
-background: linear-gradient(90deg, rgba(179,211,225,1) 0%, rgba(231,235,250,1) 100%); */
-background:linear-gradient(rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.1)),url('./resource/steven-su-_54S942DIsA-unsplash.jpg')center / cover fixed;
-width:100%;
-}
-.bottom-content-mid img{
-    margin:0;
-    margin-top:0;
-}
+
 @media screen and (max-width:576px){
     body{
         background:red;
@@ -464,30 +396,9 @@ width:100%;
     .one{
         height:65vh;
     }
-    .large-img{
-        margin-left: 2vh;
-    }
+    
     .card-container{
         padding:5rem;
-    }
-    .cactus-title{
-        display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: -20vh;
-    margin-top: -9vh;
-    }
-    .cactus-jack{
-        background: rgb(0, 0, 0);
-    }
-    .cactus-jack img{
-        margin-top: 10vh;
-    }
-    .cactus-button{
-        width: 25vh;
-        margin-left: -10vh;
-        margin-top:25vh ;
     }
     .modal{
         top:50%;
@@ -517,11 +428,7 @@ width:100%;
     #submit-login{
         margin-left: 15vh;
     }
-}
-.large-cards::-webkit-scrollbar{
-    display:none;
-}
-
+}   
 footer{
     color:rgb(0, 0, 0);
     column-count: 2;
