@@ -11,7 +11,7 @@ body::-webkit-scrollbar{
 }
 body{
     color:rgb(255, 255, 255);
-    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('./resource/121.jpg');
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('./resource/121.jpg')fixed;
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
     margin:0;
@@ -23,6 +23,7 @@ a{
     text-decoration: none;
     color:black;
 }
+
 .mysideNav a{
     font-size:4.6vh;
     text-decoration:none;
@@ -100,7 +101,7 @@ a{
     height: 80vh;
     width:48vw;
     margin:10px;
-    box-shadow: -1.5rem -1rem 5rem rgb(93, 88, 80) ;
+    box-shadow: -1.5rem -1rem 5rem rgba(93, 88, 80, 0.465) ;
     background: rgb(0, 0, 0);
     color: white;
     border-radius:20px;
@@ -140,9 +141,9 @@ a{
     text-align: center;
     align-self: center;
     justify-self:center;
-    font-size:3rem;
+    font-size:1.5rem;
     margin:5%;
-    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('./resource/main-1.gif')center;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('./resource/main-1.gif')fixed;
     box-shadow: -2.5rem -2rem 0rem rgba(255, 255, 255, 0.233) ;
 }
 .paral h1{
@@ -165,9 +166,30 @@ a{
     overflow-x: hidden;
     cursor: pointer;
 }
-.onScroll-card{
-    transition: 0.5s;
-    opacity: 1;
+h3.left{
+    position:relative;
+}
+h3.left:after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    right:80px;
+    background: rgb(255,255,255);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+}
+.card:hover h3.left:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
 }
 .button-container{
     width:60vh;
@@ -283,6 +305,7 @@ a{
 .main-head , .sub-heading{
     text-align: center;
     margin: 0;
+    color:black;
 }
 .main-head{
     font-size: 5vh;
@@ -297,9 +320,11 @@ input{
     border-radius: 10vh;
     border: 1px grey solid;
     margin-top: 0.5vh;
+    color:black;
 }
 form{
     margin-left: 30vh;
+    color:black;
 }
 .btn {
     margin-left: 0vh;
@@ -348,87 +373,59 @@ i{
     cursor:pointer;
     margin:1vh;
 }
-
-
-@media screen and (max-width:576px){
-    body{
-        background:red;
-        max-width: 576px;
-        overflow-x: hidden;
-    }
-    .heading{
-        font-size: 5vh;
-        margin: 0;
-        padding-left: 15vh;
-        width: max-content;
-        margin-top: -5vh;
-    }
-    #button{
-        margin: 0.5vh;
-        background:black;
-        font-size: 1.5vh;
-        width:12vh;
-        padding:1.5vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    }
-    .button-container{
-        max-width:12vh;
-        margin-top: -15%;
-        margin-left: 70%;
-    }
-    .paral{
-        background: url(./resource/sneaker-cl1.jpg)center / cover  ;
-        background-attachment: fixed;
-    }
-    .card{
-        margin: 0;
-        margin-left: 1vh;
-    }
-    .content-midpage{
-        max-width:576px;
-        overflow: hidden;
-    }
-    .content-midpage img{
-        height:250px;
-        margin: 0vh;
-    }
-    .one{
-        height:65vh;
-    }
-    
-    .card-container{
-        padding:5rem;
-    }
-    .modal{
-        top:50%;
-        left:50%;
-        width:400px;
-    }
-    form{
-        margin-left: 10vw;
-    }
-    input{
-        width:80vw;
-    }
-    .btn{
-        width:20vw;
-    }
-    .modal-2{
-        top:50%;
-        left:50%;
-        width:380px;
-    }
-    .modal-2 input{
-        margin-left:-6vw;
-    }
-    .login-forgot-pass{
-        margin-left: -50px;;
-    }
-    #submit-login{
-        margin-left: 15vh;
-    }
-}   
+.slant-content{
+    height:50vh;
+    width:100%;
+    margin-bottom: 100px;
+    position:relative;
+    background: #fffbfbca;
+    display: flex;
+    color:black;
+}
+.slant-content:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background:inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(2deg);
+}
+.con-mid{
+    border-radius:25px;
+    width:32%;  
+    height:80%;
+    margin:2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    transition:0.2s ease-in-out;
+}
+.con-mid:hover{
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    transition:0.6s;
+    height:84%;
+}
+.con-mid i{
+    margin:10%;
+    margin-top:70px;
+    font-size:4rem;
+    background:-webkit-linear-gradient(0deg, rgba(5,240,40,1) 0%, rgba(90,237,233,1) 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.con-mid h3{
+    font-size:1.2rem;
+    letter-spacing:1px;
+}
 footer{
     color:rgb(0, 0, 0);
     column-count: 2;
@@ -442,7 +439,6 @@ footer ul{
 }
 #ul-list{
     width:60%;
-    
     display:flex;
 }
 footer ul li{
@@ -497,4 +493,52 @@ footer .ul-list-header a{
 .icon-container i:hover{
     color:rgb(0, 0, 0);
     transition:0.3s;
+}
+@media screen and (max-width:576px){
+    body{
+        max-width: 576px;
+        overflow-x: hidden;
+    }
+     #button{
+        margin: 0.5vh;
+        background:black;
+        font-size: 1.5vh;
+        width:12vh;
+        padding:1.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    }
+    .button-container{
+        max-width:12vh;
+        margin-top: -15%;
+        margin-left: 70%;
+    }
+      .modal{
+        top:50%;
+        left:50%;
+        width:400px;
+    }
+    form{
+        margin-left: 10vw;
+    }
+    input{
+        width:80vw;
+    }
+    .btn{
+        width:20vw;
+    }
+    .modal-2{
+        top:50%;
+        left:50%;
+        width:380px;
+    }
+    .modal-2 input{
+        margin-left:-6vw;
+    }
+    .login-forgot-pass{
+        margin-left: -50px;;
+    }
+    #submit-login{
+        margin-left: 15vh;
+    }
 }

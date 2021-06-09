@@ -326,13 +326,12 @@ form{
     text-decoration: underline;
 }   
 .login-head{
-    color: black;
+    color: rgb(0, 0, 0);
     align-items: center;
     justify-content: center;
     text-align: center;
     align-self: center;
     justify-self:center;
-    
 }
 #submit-login{
     margin-left:12%;
@@ -465,6 +464,7 @@ i{
 .card-container::-webkit-scrollbar{
     display:none;
 }
+
 footer{
     color:rgb(0, 0, 0);
     column-count: 2;
@@ -533,4 +533,52 @@ footer .ul-list-header a{
 .icon-container i:hover{
     color:rgb(0, 0, 0);
     transition:0.3s;
+}
+@media screen and (max-width:576px){
+    body{
+        max-width: 576px;
+        overflow-x: hidden;
+    }
+     #button{
+        margin: 0.5vh;
+        background:black;
+        font-size: 1.5vh;
+        width:12vh;
+        padding:1.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    }
+    .button-container{
+        max-width:12vh;
+        margin-top: -15%;
+        margin-left: 70%;
+    }
+      .modal{
+        top:50%;
+        left:50%;
+        width:400px;
+    }
+    form{
+        margin-left: 10vw;
+    }
+    input{
+        width:80vw;
+    }
+    .btn{
+        width:20vw;
+    }
+    .modal-2{
+        top:50%;
+        left:50%;
+        width:380px;
+    }
+    .modal-2 input{
+        margin-left:-6vw;
+    }
+    .login-forgot-pass{
+        margin-left: -50px;;
+    }
+    #submit-login{
+        margin-left: 15vh;
+    }
 }
