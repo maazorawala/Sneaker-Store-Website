@@ -61,7 +61,7 @@ a{
     width:100%;
 }
 #load{
-    border:black 5px solid;
+    border:rgb(255, 255, 255) 5px solid;
     border-top:5px transparent solid;
     border-radius: 50%;
     height: 100px;
