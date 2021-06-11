@@ -36,6 +36,11 @@ document.addEventListener('keydown' , function(e){
 let openNav = function () {
     document.getElementById("sideNav").style.width = "700px";
     document.getElementById("main").style.marginLeft = "700px";
+    if(window.screen.width <= '576'){
+    document.getElementById("sideNav").style.width = "100vw";
+    document.getElementById("main").style.marginLeft = "0px";
+    console.log(window.screen.width);
+    }
     
 }
 const closeNav = function() {

@@ -623,5 +623,9 @@ footer .ul-list-header a{
         margin-left:25%;
         width:35vw;
     }
+    h3.left:after{
+        right:0;
+        width:100%;
+    }
 }
 
