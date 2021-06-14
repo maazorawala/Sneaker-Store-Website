@@ -534,3 +534,158 @@ footer .ul-list-header a{
     color:white;
     transition:0.3s;
 }
+
+@media screen and (max-width:576px){
+    body{
+        background:rgb(0, 0, 0);
+        max-width: 576px;
+        overflow-x: hidden;
+    }
+    .heading{
+        font-size: 5vh;
+        margin: 0;
+        padding-left: 15vh;
+        width: max-content;
+        margin-top: -5vh;
+    }
+    
+    #list-1 ul li img{
+        width:80vw;
+    }
+    #list-2{
+        margin-left:-10%;
+    }
+    footer{
+        width:100%; 
+        overflow:hidden;
+        height:75vh;
+        border:2px solid rgb(255, 0, 0);
+    }
+    
+    #list-1, #list-2{
+        width:60vw;
+        height:max-content;
+        margin-left:-8%;
+        z-index: 9999;
+    }
+    footer i{
+        margin-top:100%;
+    }
+    .icon-container{
+        width:100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    margin-left:-60%;
+    }
+    #location-map{
+        margin-left:-60%;
+        width:99vw;
+        height:25%;
+    }
+    .ul-list-header{
+        font-size:1.2rem;
+    }
+    .backTop {
+        margin-top:42vh;
+        margin-left:-40%;
+    }
+    .icons-maps{
+        z-index:8;
+    }
+    #button{
+        margin: 0.5vh;
+        background:black;
+        font-size: 1.5vh;
+        width:12vh;
+        padding:1.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    }
+    .button-container{
+        max-width:12vh;
+        margin-top: -15%;
+        margin-left: 70%;
+    }
+      .modal{
+        top:50%;
+        left:50%;
+        width:400px;
+    }
+    form{
+        margin-left: 10vw;
+    }
+    input{
+        width:80vw;
+    }
+    .btn{
+        width:20vw;
+    }
+    .modal-2{
+        top:50%;
+        left:50%;
+        width:380px;
+    }
+    .modal-2 input{
+        margin-left:-6vw;
+    }
+    .login-forgot-pass{
+        margin-left: -50px;;
+    }
+    #submit-login{
+        margin-left: 15vh;
+    }
+input{
+        margin-left:-6%
+    }
+    .btn{
+        width:25vw;
+    }
+    #submit-login{
+        margin-left:25%;
+        width:35vw;
+    }
+    
+    .card-container{
+        width:100vw;
+        width:85vw;
+        padding:1rem;
+    }
+    .card{
+        height:55vh;
+    }
+    .img-card{
+        height:38vh;
+        width:100vw;
+    }
+    .shoe-container-slider{
+        display:block;   
+        margin:10px;
+    }
+    #ul-list{
+        height:25vh;
+    }
+    .shoe-img img{
+        margin:3px;
+    }
+
+    .shoe-img{
+        width:95vw;
+    }
+    .shoe-content{
+        width:98vw;
+        margin:0;
+        border:1px solid white;
+    }
+    .btnContainer{
+        margin:50px;
+    }
+    .add-button-style{
+        width:80vw;
+        margin:35px;
+        margin-top:-15px;
+    }
+}
+
