@@ -148,7 +148,6 @@ a{
 .btn-style {
     padding: 15px;
     font-size: 2vh;
-    border:1px solid rgb(255, 255, 255);
     margin:10px;
     font-weight:1000;
     font-family: 'Raleway', sans-serif;
@@ -559,7 +558,7 @@ footer .ul-list-header a{
         width:100%; 
         overflow:hidden;
         height:75vh;
-        border:2px solid rgb(255, 0, 0);
+
     }
     
     #list-1, #list-2{
@@ -658,11 +657,10 @@ input{
     }
     .img-card{
         height:38vh;
-        width:100vw;
     }
     .shoe-container-slider{
         display:block;   
-        margin:10px;
+        margin:5px;
     }
     #ul-list{
         height:25vh;
@@ -677,7 +675,7 @@ input{
     .shoe-content{
         width:98vw;
         margin:0;
-        border:1px solid white;
+
     }
     .btnContainer{
         margin:50px;

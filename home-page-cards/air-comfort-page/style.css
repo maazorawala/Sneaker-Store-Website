@@ -555,7 +555,7 @@ footer .ul-list-header a{
         margin-left:-10%;
     }
     footer{
-        width:99%; 
+        width:100%; 
         overflow:hidden;
         height:75vh;
     }
@@ -656,7 +656,6 @@ input{
     }
     .img-card{
         height:38vh;
-        width:100vw;
     }
     .shoe-container-slider{
         display:block;   
