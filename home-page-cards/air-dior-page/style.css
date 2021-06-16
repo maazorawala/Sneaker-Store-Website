@@ -469,7 +469,6 @@ footer{
     color:white;
     column-count: 2;
     background:rgba(0, 0, 0, 0.904);
-    height:12%;
     display:flex;
 }
 footer ul{
@@ -555,8 +554,7 @@ footer .ul-list-header a{
     }
     footer{
         width:100%; 
-        overflow:hidden;
-        height:75vh;
+        overflow-x:hidden;
     }
     
     #list-1, #list-2{
@@ -580,7 +578,10 @@ footer .ul-list-header a{
     #location-map{
         margin-left:-60%;
         width:99vw;
-        height:25%;
+        height:40vh;
+    }
+    .backTop{
+        color:white;
     }
     .ul-list-header{
         font-size:1.2rem;

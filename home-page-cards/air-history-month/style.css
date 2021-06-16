@@ -471,7 +471,6 @@ footer{
     color:white;
     column-count: 2;
     background:rgba(0, 0, 0, 0.904);
-    height:12%;
     display:flex;
 }
 footer ul{
@@ -536,6 +535,11 @@ footer .ul-list-header a{
     color:white;
     transition:0.3s;
 }
+#location-map{
+    height:82%;
+    overflow:hidden;
+    margin-top:2%;
+}
 @media screen and (max-width:576px){
     body{
         max-width: 576px;
@@ -557,10 +561,11 @@ footer .ul-list-header a{
     }
     footer{
         width:100%; 
-        overflow:hidden;
-        height:75vh;
+        overflow-x:hidden;
     }
-    
+    .backTop{
+        color:white;
+    }
     #list-1, #list-2{
         width:60vw;
         height:max-content;
@@ -582,7 +587,7 @@ footer .ul-list-header a{
     #location-map{
         margin-left:-60%;
         width:99vw;
-        height:25%;
+        height:40vh;
     }
     .ul-list-header{
         font-size:1.2rem;
