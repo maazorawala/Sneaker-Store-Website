@@ -2,6 +2,7 @@ html{
     scroll-behavior: smooth;
     margin:0;
     padding:0;
+    transition:0.5s ease-in-out;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -11,8 +12,7 @@ body::-webkit-scrollbar{
 }
 body{
     color:rgb(0, 0, 0);
-    background: rgb(191,191,191);
-background: linear-gradient(90deg, rgba(191,191,191,1) 0%, rgba(218,229,249,1) 100%);
+    background: rgb(177, 194, 209);
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
     margin:0;
@@ -27,16 +27,16 @@ a{
 .mysideNav a{
     font-size:4.6vh;
     text-decoration:none;
+    text-decoration: none;
     display: block;
     padding: 8vh;
     text-align: center;
     background:#000;
     color: rgba(255,255,255,0.5 );
     transition:0.3s ease-out;
-
 }
 .mysideNav{
-    position:absolute;
+    
     display:block;  
     z-index: 1;
     transition: 0.5s;
@@ -109,7 +109,7 @@ a{
     width: 45%;
     margin:18px;
     display:inline-flex; 
-    background:#212325;
+    background:hsl(210deg 6% 14%);
     cursor: pointer;
     transition:0.5s ease-in-out;
 }
@@ -326,13 +326,12 @@ form{
     text-decoration: underline;
 }   
 .login-head{
-    color: black;
+    color: rgb(0, 0, 0);
     align-items: center;
     justify-content: center;
     text-align: center;
     align-self: center;
     justify-self:center;
-    
 }
 #submit-login{
     margin-left:12%;
@@ -412,7 +411,7 @@ i{
     height: max-content;
     margin:2vh;
     box-shadow: -1.5rem -1rem 5rem rgba(0, 0, 0 , 0.1) ;
-    background: rgba(255, 255, 255, 0.609);
+    background: rgba(241, 241, 241, 0.383);
     color: rgb(0, 0, 0);
     border: 0.5px rgb(0, 0, 0) solid;
     height:450px;
@@ -426,7 +425,7 @@ i{
     text-align: center;
     align-self: center;
     justify-self:center;
-    background: rgb(238, 237, 237);
+    background: rgb(0, 0, 0);
     transition:0.4s ease-in-out;
 }
 .paral{
@@ -455,7 +454,7 @@ i{
 .card-container.card-container::-webkit-scrollbar{
         height: 2px;
         width: 1px;
-        background: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
         display: flex;
 }
 .card-container::-webkit-scrollbar-thumb:horizontal{
@@ -465,10 +464,11 @@ i{
 .card-container::-webkit-scrollbar{
     display:none;
 }
+
 footer{
-    color:white;
+    color:rgb(255, 255, 255);
     column-count: 2;
-    background:rgba(0, 0, 0, 0.904);
+    background:#000000;
     display:flex;
 }
 footer ul{
@@ -485,7 +485,7 @@ footer ul li{
 }
 .list-item  a{
     font-size:1.1rem;  
-    color:#858585; 
+    color:#ffffff; 
     letter-spacing: 2px;
     padding:8px;
     transition:0.5s ease-in-out;
@@ -495,13 +495,13 @@ footer ul li{
     letter-spacing: 2px;
 }
 footer .ul-list-header a{
-    color:white;
+    color:rgb(255, 255, 255);
     
 }
 .list-item a:hover{
-    color:white;
+    color:rgb(0, 0, 0);
     transition:0.5s;
-    border:0.5px solid white;
+    border:0.5px solid rgb(0, 0, 0);
 }
 .ul-list-header a:hover{
     text-decoration:underline;  
@@ -530,8 +530,16 @@ footer .ul-list-header a{
     transition:0.3s ease-in-out;
 }
 .icon-container i:hover{
-    color:white;
+    color:rgb(0, 0, 0);
     transition:0.3s;
+}
+.backTop {
+    color:white;
+}
+#location-map{
+    height:82%;
+    overflow:hidden;
+    margin-top:2%;
 }
 @media screen and (max-width:576px){
     body{
@@ -579,9 +587,6 @@ footer .ul-list-header a{
         margin-left:-60%;
         width:99vw;
         height:40vh;
-    }
-    .backTop{
-        color:white;
     }
     .ul-list-header{
         font-size:1.2rem;

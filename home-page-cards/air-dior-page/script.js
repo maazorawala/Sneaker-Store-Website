@@ -41,7 +41,6 @@ let openNav = function () {
     document.getElementById("main").style.marginLeft = "0px";
     console.log(window.screen.width);
     }
-    
 }
 const closeNav = function() {
     document.getElementById("sideNav").style.width = "0";

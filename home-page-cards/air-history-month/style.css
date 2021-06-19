@@ -13,13 +13,15 @@ body::-webkit-scrollbar{
 body{
     color:rgb(255, 255, 255);
     background: rgb(50,50,50);
-background: linear-gradient(90deg, rgb(20, 20, 20) 18%, rgb(100,100,100) 100%);
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
     margin:0;
     padding:0;
     display: flex;
     flex-wrap: wrap;
+}
+.backTop{
+    color:white;
 }
 a{
     text-decoration: none;

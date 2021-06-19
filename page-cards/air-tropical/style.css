@@ -12,7 +12,6 @@ body::-webkit-scrollbar{
 }
 body{
     color:rgb(0, 0, 0);background: rgb(27,204,181);
-background: linear-gradient(90deg, rgb(42, 255, 227) 0%, rgb(141, 251, 255) 100%);
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
     margin:0;
